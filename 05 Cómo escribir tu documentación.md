@@ -81,6 +81,14 @@ graph TD
 ```
 ````
 
+Se ve así de renderizado:
+
+```mermaid
+graph TD
+  A[Repositorio Git] --> B[Wiki Desktop Client]
+  B --> C[Tu equipo lee la wiki]
+```
+
 ## Tablas
 
 Tablas Markdown estándar — como las que ya viste en esta misma página.
