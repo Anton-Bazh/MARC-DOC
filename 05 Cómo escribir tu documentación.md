@@ -103,3 +103,6 @@ Tablas Markdown estándar — como las que ya viste en esta misma página.
 | Aviso o nota destacada | `> [!tipo]` |
 | Diagrama | ` ```mermaid ` |
 | Código con resaltado | ` ```lenguaje ` |
+
+> [!tip] Prueba end-to-end
+> Este párrafo se agregó para probar que Resincronizar refleja cambios sin reiniciar la app.
