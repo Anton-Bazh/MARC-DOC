@@ -89,6 +89,84 @@ graph TD
   B --> C[Tu equipo lee la wiki]
 ```
 
+## Gráficas
+
+Los bloques ` ```chart ` se renderizan como gráficas reales de [Chart.js](https://www.chartjs.org/), no como texto. Escribes la configuración en JSON — tipo de gráfica, etiquetas, datos y colores:
+
+````
+```chart
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Lun", "Mar", "Mié", "Jue", "Vie"],
+    "datasets": [{
+      "label": "Páginas leídas",
+      "data": [12, 19, 8, 15, 22],
+      "backgroundColor": "#5b56f0"
+    }]
+  }
+}
+```
+````
+
+Se ve así de renderizado:
+
+```chart
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Lun", "Mar", "Mié", "Jue", "Vie"],
+    "datasets": [{
+      "label": "Páginas leídas",
+      "data": [12, 19, 8, 15, 22],
+      "backgroundColor": "#5b56f0"
+    }]
+  }
+}
+```
+
+> [!tip] Rendimiento
+> Las gráficas se cargan de forma perezosa: si tu página tiene diez gráficas y el lector nunca hace scroll hasta la última, esa nunca se procesa. Y si tu JSON tiene un error de sintaxis, la app te avisa en el propio bloque en vez de romper el resto de la página.
+
+## Fórmulas matemáticas
+
+Escribe LaTeX entre signos de dólar y se renderiza como notación matemática real, vía [KaTeX](https://katex.org/) — útil para documentación técnica con álgebra, estadística o cualquier notación formal.
+
+| Escribes | Resultado |
+|---|---|
+| `$x^2 + y^2 = z^2$` (en medio de una frase) | Fórmula en línea: $x^2 + y^2 = z^2$ |
+| `$$ ... $$` en su propio bloque | Fórmula centrada, en tamaño grande |
+
+Un bloque completo:
+
+```
+$$
+\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+```
+
+Se ve así de renderizado:
+
+$$
+\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+> [!note] Un precio no es una fórmula
+> Si escribes "cuesta $5 y $10", la app es lo bastante lista para no confundir eso con matemáticas — necesita un signo de dólar pegado a la fórmula, sin espacio de por medio, para activarse.
+
+## Iconos
+
+Escribe el nombre del icono entre dos puntos y se inserta como parte del documento — no es una imagen que se descarga, es una forma vectorial que ya vive dentro de la app:
+
+| Escribes | Resultado |
+|---|---|
+| `:material-rocket-launch:` | :material-rocket-launch: |
+| `:material-alert:` | :material-alert: |
+| `:material-check-circle:` | :material-check-circle: |
+| `:material-lock:` | :material-lock: |
+
+Sirven para dar contexto visual rápido sin escribir una sola imagen: por ejemplo, para marcar de un vistazo el estado de una sección (:material-check-circle: listo, :material-alert: pendiente de revisión) o para acompañar un título con algo más reconocible que texto plano.
+
 ## Tablas
 
 Tablas Markdown estándar — como las que ya viste en esta misma página.
@@ -102,4 +180,7 @@ Tablas Markdown estándar — como las que ya viste en esta misma página.
 | Incrustar otra nota completa | `![[Nota]]` |
 | Aviso o nota destacada | `> [!tipo]` |
 | Diagrama | ` ```mermaid ` |
+| Gráfica de datos | ` ```chart ` |
+| Fórmula matemática | `$...$` o `$$...$$` |
+| Icono | `:nombre-del-icono:` |
 | Código con resaltado | ` ```lenguaje ` |
