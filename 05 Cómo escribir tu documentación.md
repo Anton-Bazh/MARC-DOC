@@ -1,6 +1,24 @@
 # Cómo escribir tu documentación
 
-Esta página es para quien **escribe** el contenido del repositorio conectado, no solo para quien lo lee. Wiki Desktop Client está pensada para equipos que ya escriben en Markdown al estilo Obsidian — estas son las convenciones que soporta y cómo sacarles el máximo provecho.
+Esta página es para quien **escribe** el contenido del repositorio conectado, no solo para quien lo lee. MARC está pensada para equipos que ya escriben en Markdown al estilo Obsidian — estas son las convenciones que soporta y cómo sacarles el máximo provecho.
+
+## Documentación oficial de referencia
+
+MARC no inventa su propia sintaxis: traduce Markdown estándar más un conjunto de extensiones ya establecidas. Si quieres dominar cada una a fondo, esta es la fuente oficial de cada una:
+
+| Herramienta | Para qué sirve | Documentación oficial |
+|---|---|---|
+| Markdown básico | Títulos, listas, negritas, enlaces, imágenes | [markdownguide.org/basic-syntax](https://www.markdownguide.org/basic-syntax/) |
+| PyMdown Extensions | Motor detrás de tablas, resaltado de código, admonitions y superfences que usa MARC | [facelessuser.github.io/pymdown-extensions](https://facelessuser.github.io/pymdown-extensions/) |
+| Wikilinks (Obsidian) | Sintaxis `[[...]]` para enlazar y transcluir notas | [help.obsidian.md — Internal links](https://help.obsidian.md/Linking+notes+and+files/Internal+links) |
+| Callouts (Obsidian) | Sintaxis `> [!tipo]` para recuadros de aviso | [help.obsidian.md — Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts) |
+| Mermaid | Diagramas de flujo, secuencia, Gantt y más como código | [mermaid.js.org](https://mermaid.js.org/intro/) |
+| Chart.js | Gráficas de datos configurables por JSON | [chartjs.org/docs/latest](https://www.chartjs.org/docs/latest/) |
+| KaTeX | Notación matemática en LaTeX | [katex.org — Supported functions](https://katex.org/docs/supported.html) |
+| Material Design Icons | Catálogo completo de iconos disponibles vía `:nombre:` | [pictogrammers.com/library/mdi](https://pictogrammers.com/library/mdi/) |
+
+> [!tip]
+> Si algo se ve distinto a lo que esperabas, casi siempre la respuesta está en una de estas páginas — MARC solo renderiza lo que estos motores ya definen, no agrega reglas propias por encima.
 
 ## Nombres de archivo
 
@@ -11,11 +29,11 @@ Escribe tus archivos como te sea natural: con espacios, mayúsculas, acentos —
 No necesitas un `index.md`. Si tu repositorio no trae uno, la app abre automáticamente la primera página disponible al entrar a la wiki.
 
 > [!tip] Recomendación
-> Numera tus archivos (`00 Bienvenida.md`, `01 ...`, `02 ...`) para controlar el orden de navegación y asegurar que la primera página sea la que quieres como portada. Así está escrita esta misma documentación que estás leyendo.
+> Numera tus archivos (`00 Portada.md`, `01 ...`, `02 ...`) para controlar el orden de navegación y asegurar que la primera página sea la que quieres como portada. Así está escrita esta misma documentación que estás leyendo.
 
 ## Enlaces estilo Obsidian (wikilinks)
 
-Puedes enlazar entre páginas con la sintaxis `[[...]]`, igual que en Obsidian:
+Puedes enlazar entre páginas con la sintaxis `[[...]]`, igual que en [Obsidian](https://help.obsidian.md/Linking+notes+and+files/Internal+links):
 
 | Escribes | Resultado |
 |---|---|
@@ -34,76 +52,203 @@ Con `!` antes de los corchetes, en vez de enlazar, **incrustas** el contenido:
 
 ## Callouts (recuadros de aviso)
 
-Misma sintaxis que Obsidian, con `> [!tipo]`:
+Misma sintaxis que [Obsidian](https://help.obsidian.md/Editing+and+formatting/Callouts), con `> [!tipo]`. MARC soporta el catálogo completo de admonitions de Material for MkDocs, no solo cuatro tipos:
 
 ```
-> [!note]
-> Una nota informativa normal.
+> [!note] Nota
+> Información normal, sin urgencia.
 
-> [!tip]
-> Un consejo o atajo.
+> [!tip] Consejo
+> Un atajo o buena práctica.
 
-> [!warning]
+> [!success] Éxito
+> Algo salió bien o está confirmado.
+
+> [!question] Pregunta
+> Algo que vale la pena cuestionar o verificar.
+
+> [!warning] Advertencia
 > Algo a lo que hay que prestar atención.
 
-> [!danger]
+> [!danger] Peligro
 > Un riesgo real o una acción irreversible.
+
+> [!example] Ejemplo
+> Un caso concreto que ilustra el punto anterior.
+
+> [!quote] Cita
+> Una cita textual de otra fuente.
 ```
 
 Se ven así de renderizados:
 
-> [!note]
-> Una nota informativa normal.
+> [!note] Nota
+> Información normal, sin urgencia.
 
-> [!warning]
+> [!success] Éxito
+> Algo salió bien o está confirmado.
+
+> [!warning] Advertencia
 > Algo a lo que hay que prestar atención.
+
+> [!danger] Peligro
+> Un riesgo real o una acción irreversible.
 
 ## Bloques de código
 
-Cualquier bloque con tres comillas invertidas y el nombre del lenguaje trae resaltado de sintaxis y un botón de copiar:
+Cualquier bloque con tres comillas invertidas y el nombre del lenguaje trae resaltado de sintaxis y un botón de copiar. También puedes resaltar líneas específicas con `hl_lines` y darle un título al bloque:
 
 ````
-```python
-def hola():
-    return "mundo"
+```python title="sincronizar.py" hl_lines="2 3"
+def sincronizar(repo):
+    repo.fetch("origin")
+    repo.reset_to("origin/main")
+    return repo.head_commit()
 ```
 ````
 
+Se ve así de renderizado:
+
+```python title="sincronizar.py" hl_lines="2 3"
+def sincronizar(repo):
+    repo.fetch("origin")
+    repo.reset_to("origin/main")
+    return repo.head_commit()
+```
+
 ## Diagramas Mermaid
 
-Los bloques ` ```mermaid ` se renderizan como diagramas reales, no como texto:
+Los bloques ` ```mermaid ` se renderizan como diagramas reales, no como texto — soportan todo lo que [Mermaid](https://mermaid.js.org/intro/) define: flowcharts, diagramas de secuencia, Gantt, ER, y más.
+
+**Ejemplo — arquitectura de MARC como flowchart con subgrafos y estilos:**
 
 ````
 ```mermaid
-graph TD
-  A[Repositorio Git] --> B[Wiki Desktop Client]
-  B --> C[Tu equipo lee la wiki]
+flowchart LR
+    subgraph Origen["Tu equipo"]
+        A[Repositorio en GitHub]
+    end
+    subgraph Local["Tu equipo de escritorio"]
+        B[git pull automático]
+        C[Motor MkDocs + Material]
+        D[Servidor local FastAPI]
+    end
+    subgraph Lectura["Experiencia de lectura"]
+        E[Wiki navegable]
+        F[Búsqueda instantánea]
+        G[Gráficas · Diagramas · Fórmulas]
+    end
+    A -- sincroniza --> B --> C --> D --> E
+    E --- F
+    E --- G
+    classDef repo fill:#5b56f0,color:#fff,stroke:none
+    classDef engine fill:#22c55e,color:#0b1a10,stroke:none
+    class A repo
+    class C,D engine
 ```
 ````
 
 Se ve así de renderizado:
 
 ```mermaid
-graph TD
-  A[Repositorio Git] --> B[Wiki Desktop Client]
-  B --> C[Tu equipo lee la wiki]
+flowchart LR
+    subgraph Origen["Tu equipo"]
+        A[Repositorio en GitHub]
+    end
+    subgraph Local["Tu equipo de escritorio"]
+        B[git pull automático]
+        C[Motor MkDocs + Material]
+        D[Servidor local FastAPI]
+    end
+    subgraph Lectura["Experiencia de lectura"]
+        E[Wiki navegable]
+        F[Búsqueda instantánea]
+        G[Gráficas · Diagramas · Fórmulas]
+    end
+    A -- sincroniza --> B --> C --> D --> E
+    E --- F
+    E --- G
+    classDef repo fill:#5b56f0,color:#fff,stroke:none
+    classDef engine fill:#22c55e,color:#0b1a10,stroke:none
+    class A repo
+    class C,D engine
+```
+
+**Ejemplo — diagrama de secuencia:**
+
+````
+```mermaid
+sequenceDiagram
+    autonumber
+    participant U as Tú
+    participant M as MARC
+    participant K as Llavero del SO
+    participant G as GitHub
+
+    U->>M: Abre la app
+    M->>K: Solicita el token guardado
+    K-->>M: Token cifrado
+    M->>G: git pull (autenticado)
+    G-->>M: Últimos commits
+    M->>M: mkdocs build
+    M-->>U: Wiki actualizada
+```
+````
+
+Se ve así de renderizado:
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant U as Tú
+    participant M as MARC
+    participant K as Llavero del SO
+    participant G as GitHub
+
+    U->>M: Abre la app
+    M->>K: Solicita el token guardado
+    K-->>M: Token cifrado
+    M->>G: git pull (autenticado)
+    G-->>M: Últimos commits
+    M->>M: mkdocs build
+    M-->>U: Wiki actualizada
 ```
 
 ## Gráficas
 
-Los bloques ` ```chart ` se renderizan como gráficas reales de [Chart.js](https://www.chartjs.org/), no como texto. Escribes la configuración en JSON — tipo de gráfica, etiquetas, datos y colores:
+Los bloques ` ```chart ` se renderizan como gráficas reales de [Chart.js](https://www.chartjs.org/docs/latest/), no como texto. Escribes la configuración completa en JSON — tipo de gráfica, etiquetas, datos, ejes y colores — exactamente igual que llamarías a `new Chart(ctx, config)` en JavaScript.
+
+**Ejemplo — gráfica mixta (barras + línea) con doble eje:**
 
 ````
 ```chart
 {
   "type": "bar",
   "data": {
-    "labels": ["Lun", "Mar", "Mié", "Jue", "Vie"],
-    "datasets": [{
-      "label": "Páginas leídas",
-      "data": [12, 19, 8, 15, 22],
-      "backgroundColor": "#5b56f0"
-    }]
+    "labels": ["Ene", "Feb", "Mar", "Abr", "May", "Jun"],
+    "datasets": [
+      {
+        "type": "bar",
+        "label": "Páginas nuevas",
+        "data": [8, 12, 6, 15, 20, 18],
+        "backgroundColor": "#5b56f0"
+      },
+      {
+        "type": "line",
+        "label": "Repositorios conectados",
+        "data": [2, 3, 3, 4, 5, 6],
+        "borderColor": "#22c55e",
+        "backgroundColor": "#22c55e",
+        "yAxisID": "y1",
+        "tension": 0.3
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "y": { "beginAtZero": true },
+      "y1": { "beginAtZero": true, "position": "right", "grid": { "drawOnChartArea": false } }
+    }
   }
 }
 ```
@@ -115,12 +260,30 @@ Se ve así de renderizado:
 {
   "type": "bar",
   "data": {
-    "labels": ["Lun", "Mar", "Mié", "Jue", "Vie"],
-    "datasets": [{
-      "label": "Páginas leídas",
-      "data": [12, 19, 8, 15, 22],
-      "backgroundColor": "#5b56f0"
-    }]
+    "labels": ["Ene", "Feb", "Mar", "Abr", "May", "Jun"],
+    "datasets": [
+      {
+        "type": "bar",
+        "label": "Páginas nuevas",
+        "data": [8, 12, 6, 15, 20, 18],
+        "backgroundColor": "#5b56f0"
+      },
+      {
+        "type": "line",
+        "label": "Repositorios conectados",
+        "data": [2, 3, 3, 4, 5, 6],
+        "borderColor": "#22c55e",
+        "backgroundColor": "#22c55e",
+        "yAxisID": "y1",
+        "tension": 0.3
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "y": { "beginAtZero": true },
+      "y1": { "beginAtZero": true, "position": "right", "grid": { "drawOnChartArea": false } }
+    }
   }
 }
 ```

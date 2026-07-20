@@ -35,3 +35,11 @@ Asegúrate de que el cambio ya esté en el repositorio remoto (con `push`), no s
 ## ¿Dónde se guarda mi token de acceso?
 
 En el llavero nativo de tu sistema operativo, cifrado — nunca en un archivo de texto plano. Más detalle en [[01 Conectar tu primer repositorio]].
+
+## ¿Por qué esta documentación ya no dice "Wiki Desktop Client"?
+
+Ese fue el nombre de trabajo original del proyecto. El nombre oficial hoy es **MARC** (Markdown Automatizado por Repo y Consulta) — mismo motor, mismo comportamiento, solo un nombre definitivo. Ver [[07 Créditos]].
+
+## ¿Esta documentación siempre está al día con mi versión de la app?
+
+El **contenido** sí: este mismo repositorio (`Wiki-Desktop-Client-doc`) se sincroniza solo cada vez que abres MARC, igual que cualquier otro repositorio conectado — ver [[01 Conectar tu primer repositorio]]. Lo que puede no coincidir es el **número de versión** que ves en la [[00 Portada|portada]] y en [[07 Créditos]]: hoy se actualiza a mano en cada release, así que si tu instalación es más antigua que el número mostrado, la documentación puede describir funciones (como gráficas, fórmulas o iconos) que tu copia instalada todavía no trae empaquetadas. Compara siempre contra el número que ves en **Acerca de** dentro de la propia app.
