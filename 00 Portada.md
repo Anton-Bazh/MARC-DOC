@@ -1,14 +1,10 @@
-<div align="center">
-
-![MARC](/branding/logo-ring.png)
+![MARC](assets/logo.png){ width="120" }
 
 # MARC
 
 ### Markdown Automatizado por Repo y Consulta
 
 `v1.2.0`
-
-</div>
 
 ---
 

@@ -6,16 +6,16 @@ Esta página es para quien **escribe** el contenido del repositorio conectado, n
 
 MARC no inventa su propia sintaxis: traduce Markdown estándar más un conjunto de extensiones ya establecidas. Si quieres dominar cada una a fondo, esta es la fuente oficial de cada una:
 
-| Herramienta | Para qué sirve | Documentación oficial |
-|---|---|---|
-| Markdown básico | Títulos, listas, negritas, enlaces, imágenes | [markdownguide.org/basic-syntax](https://www.markdownguide.org/basic-syntax/) |
-| PyMdown Extensions | Motor detrás de tablas, resaltado de código, admonitions y superfences que usa MARC | [facelessuser.github.io/pymdown-extensions](https://facelessuser.github.io/pymdown-extensions/) |
-| Wikilinks (Obsidian) | Sintaxis `[[...]]` para enlazar y transcluir notas | [help.obsidian.md — Internal links](https://help.obsidian.md/Linking+notes+and+files/Internal+links) |
-| Callouts (Obsidian) | Sintaxis `> [!tipo]` para recuadros de aviso | [help.obsidian.md — Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts) |
-| Mermaid | Diagramas de flujo, secuencia, Gantt y más como código | [mermaid.js.org](https://mermaid.js.org/intro/) |
-| Chart.js | Gráficas de datos configurables por JSON | [chartjs.org/docs/latest](https://www.chartjs.org/docs/latest/) |
-| KaTeX | Notación matemática en LaTeX | [katex.org — Supported functions](https://katex.org/docs/supported.html) |
-| Material Design Icons | Catálogo completo de iconos disponibles vía `:nombre:` | [pictogrammers.com/library/mdi](https://pictogrammers.com/library/mdi/) |
+| | Herramienta | Para qué sirve | Documentación oficial |
+|---|---|---|---|
+| :simple-markdown: | Markdown básico | Títulos, listas, negritas, enlaces, imágenes | [markdownguide.org/basic-syntax](https://www.markdownguide.org/basic-syntax/) |
+| :simple-python: | PyMdown Extensions | Motor detrás de tablas, resaltado de código, admonitions y superfences que usa MARC | [facelessuser.github.io/pymdown-extensions](https://facelessuser.github.io/pymdown-extensions/) |
+| :simple-obsidian: | Wikilinks (Obsidian) | Sintaxis `[[...]]` para enlazar y transcluir notas | [help.obsidian.md — Internal links](https://help.obsidian.md/Linking+notes+and+files/Internal+links) |
+| :simple-obsidian: | Callouts (Obsidian) | Sintaxis `> [!tipo]` para recuadros de aviso | [help.obsidian.md — Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts) |
+| :simple-mermaid: | Mermaid | Diagramas de flujo, secuencia, Gantt y más como código | [mermaid.js.org](https://mermaid.js.org/intro/) |
+| :simple-chartdotjs: | Chart.js | Gráficas de datos configurables por JSON | [chartjs.org/docs/latest](https://www.chartjs.org/docs/latest/) |
+| :simple-latex: | KaTeX | Notación matemática en LaTeX | [katex.org — Supported functions](https://katex.org/docs/supported.html) |
+| :material-shape: | Material Design Icons | Catálogo completo de iconos disponibles vía `:nombre:` | [pictogrammers.com/library/mdi](https://pictogrammers.com/library/mdi/) |
 
 > [!tip]
 > Si algo se ve distinto a lo que esperabas, casi siempre la respuesta está en una de estas páginas — MARC solo renderiza lo que estos motores ya definen, no agrega reglas propias por encima.
@@ -94,6 +94,10 @@ Se ven así de renderizados:
 > [!danger] Peligro
 > Un riesgo real o una acción irreversible.
 
+**Así se ve una vez renderizado:**
+
+![Los cuatro callouts — Nota, Éxito, Advertencia y Peligro — renderizados](assets/capturas/callouts.png)
+
 ## Bloques de código
 
 Cualquier bloque con tres comillas invertidas y el nombre del lenguaje trae resaltado de sintaxis y un botón de copiar. También puedes resaltar líneas específicas con `hl_lines` y darle un título al bloque:
@@ -115,6 +119,10 @@ def sincronizar(repo):
     repo.reset_to("origin/main")
     return repo.head_commit()
 ```
+
+**Así se ve una vez renderizado** (título de archivo + líneas 2 y 3 resaltadas + botón de copiar):
+
+![Bloque de código Python con título "sincronizar.py" y dos líneas resaltadas](assets/capturas/codigo-resaltado.png)
 
 ## Diagramas Mermaid
 
@@ -174,6 +182,10 @@ flowchart LR
     class C,D engine
 ```
 
+**Así se ve una vez renderizado:**
+
+![Diagrama de flujo con tres subgrafos: Tu equipo, Tu equipo de escritorio y Experiencia de lectura, coloreado por clase](assets/capturas/mermaid-arquitectura.png)
+
 **Ejemplo — diagrama de secuencia:**
 
 ````
@@ -213,6 +225,10 @@ sequenceDiagram
     M->>M: mkdocs build
     M-->>U: Wiki actualizada
 ```
+
+**Así se ve una vez renderizado:**
+
+![Diagrama de secuencia numerado entre Tú, MARC, el llavero del sistema y GitHub](assets/capturas/mermaid-secuencia.png)
 
 ## Gráficas
 
@@ -288,6 +304,10 @@ Se ve así de renderizado:
 }
 ```
 
+**Así se ve una vez renderizado:**
+
+![Gráfica de barras "Páginas nuevas" combinada con una línea "Repositorios conectados" en un eje secundario](assets/capturas/chart-mixto.png)
+
 > [!tip] Rendimiento
 > Las gráficas se cargan de forma perezosa: si tu página tiene diez gráficas y el lector nunca hace scroll hasta la última, esa nunca se procesa. Y si tu JSON tiene un error de sintaxis, la app te avisa en el propio bloque en vez de romper el resto de la página.
 
@@ -313,6 +333,10 @@ Se ve así de renderizado:
 $$
 \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
+
+**Así se ve una vez renderizado** (útil si estás leyendo esto en GitHub, donde KaTeX no se ejecuta):
+
+![La fórmula general cuadrática renderizada con KaTeX](assets/capturas/katex-formula.png)
 
 > [!note] Un precio no es una fórmula
 > Si escribes "cuesta $5 y $10", la app es lo bastante lista para no confundir eso con matemáticas — necesita un signo de dólar pegado a la fórmula, sin espacio de por medio, para activarse.

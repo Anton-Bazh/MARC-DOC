@@ -8,16 +8,16 @@
 
 ## Stack técnico
 
-| Capa | Herramienta |
-|---|---|
-| Traducción de Markdown → HTML | [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) |
-| Servidor local | [FastAPI](https://fastapi.tiangolo.com/) |
-| Clonado y sincronización de repos | [pygit2](https://www.pygit2.org/) (libgit2), sin depender de `git` instalado en el sistema |
-| Almacenamiento seguro de tokens | [`keyring`](https://pypi.org/project/keyring/), sobre el llavero nativo del sistema operativo |
-| Diagramas | [Mermaid](https://mermaid.js.org/) |
-| Gráficas | [Chart.js](https://www.chartjs.org/) |
-| Fórmulas matemáticas | [KaTeX](https://katex.org/) |
-| Wikilinks, transclusión y callouts estilo Obsidian | [mkdocs-obsidian-links](https://pypi.org/project/mkdocs-obsidian-links/), [mkdocs-embed-file-plugins](https://pypi.org/project/mkdocs-embed-file-plugins/), [mkdocs-callouts](https://pypi.org/project/mkdocs-callouts/) |
+| | Capa | Herramienta |
+|---|---|---|
+| :simple-materialformkdocs: | Traducción de Markdown → HTML | [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) |
+| :simple-fastapi: | Servidor local | [FastAPI](https://fastapi.tiangolo.com/) |
+| :simple-git: | Clonado y sincronización de repos | [pygit2](https://www.pygit2.org/) (libgit2), sin depender de `git` instalado en el sistema |
+| :material-key-variant: | Almacenamiento seguro de tokens | [`keyring`](https://pypi.org/project/keyring/), sobre el llavero nativo del sistema operativo |
+| :simple-mermaid: | Diagramas | [Mermaid](https://mermaid.js.org/) |
+| :simple-chartdotjs: | Gráficas | [Chart.js](https://www.chartjs.org/) |
+| :simple-latex: | Fórmulas matemáticas | [KaTeX](https://katex.org/) |
+| :simple-obsidian: | Wikilinks, transclusión y callouts estilo Obsidian | [mkdocs-obsidian-links](https://pypi.org/project/mkdocs-obsidian-links/), [mkdocs-embed-file-plugins](https://pypi.org/project/mkdocs-embed-file-plugins/), [mkdocs-callouts](https://pypi.org/project/mkdocs-callouts/) |
 
 Todas las librerías de terceros están vendorizadas — nada se carga desde un CDN — para que la wiki funcione completamente sin conexión una vez sincronizada.
 
