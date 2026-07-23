@@ -13,6 +13,7 @@ MARC no inventa su propia sintaxis: traduce Markdown estándar más un conjunto 
 | :simple-obsidian: | Wikilinks (Obsidian) | Sintaxis `[[...]]` para enlazar y transcluir notas | [help.obsidian.md — Internal links](https://help.obsidian.md/Linking+notes+and+files/Internal+links) |
 | :simple-obsidian: | Callouts (Obsidian) | Sintaxis `> [!tipo]` para recuadros de aviso | [help.obsidian.md — Callouts](https://help.obsidian.md/Editing+and+formatting/Callouts) |
 | :simple-mermaid: | Mermaid | Diagramas de flujo, secuencia, Gantt y más como código | [mermaid.js.org](https://mermaid.js.org/intro/) |
+| :material-vector-polyline: | React Flow | Diagramas de nodos que el lector puede arrastrar y reacomodar | [reactflow.dev](https://reactflow.dev/) |
 | :simple-chartdotjs: | Chart.js | Gráficas de datos configurables por JSON | [chartjs.org/docs/latest](https://www.chartjs.org/docs/latest/) |
 | :simple-latex: | KaTeX | Notación matemática en LaTeX | [katex.org — Supported functions](https://katex.org/docs/supported.html) |
 | :material-shape: | Material Design Icons | Catálogo completo de iconos disponibles vía `:nombre:` | [pictogrammers.com/library/mdi](https://pictogrammers.com/library/mdi/) |
@@ -230,6 +231,113 @@ sequenceDiagram
 
 ![Diagrama de secuencia numerado entre Tú, MARC, el llavero del sistema y GitHub](assets/capturas/mermaid-secuencia.png)
 
+## Diagramas arrastrables (React Flow)
+
+Mermaid es perfecto para un diagrama que solo necesita leerse — pero es un SVG fijo, sus nodos no se mueven. Cuando quieras que **quien lee reacomode el diagrama a su gusto** (explorar una arquitectura grande, reordenar un mapa de dependencias, o simplemente jugar con la disposición), usa un bloque ` ```flow ` en su lugar: se renderiza con [React Flow](https://reactflow.dev/), y cada nodo se arrastra con el mouse.
+
+A diferencia de Mermaid (una sintaxis de texto que se traduce a diagrama), aquí escribes directamente la estructura de nodos y conexiones en JSON — el mismo formato nativo que usa React Flow internamente, igual que los bloques ` ```chart ` escriben configuración nativa de Chart.js.
+
+**Ejemplo — cómo tu Markdown se convierte en la wiki final, con los cuatro motores de contenido interactivo en paralelo:**
+
+````
+```flow
+{
+  "nodes": [
+    { "id": "md", "position": { "x": 0, "y": 220 },
+      "data": { "label": "Tu Markdown" },
+      "style": { "background": "#1e2129", "color": "#fff", "border": "2px solid #5b56f0", "borderRadius": 12, "padding": 10, "fontWeight": 600, "width": 150 } },
+
+    { "id": "mermaid", "position": { "x": 320, "y": 0 },
+      "data": { "label": "Mermaid\nDiagramas fijos" },
+      "style": { "background": "#5b56f0", "color": "#fff", "borderRadius": 10, "padding": 10, "whiteSpace": "pre-line", "textAlign": "center", "width": 170 } },
+    { "id": "chart", "position": { "x": 320, "y": 140 },
+      "data": { "label": "Chart.js\nGráficas" },
+      "style": { "background": "#22c55e", "color": "#0b1a10", "borderRadius": 10, "padding": 10, "whiteSpace": "pre-line", "textAlign": "center", "width": 170 } },
+    { "id": "katex", "position": { "x": 320, "y": 280 },
+      "data": { "label": "KaTeX\nFórmulas" },
+      "style": { "background": "#f59e0b", "color": "#231a06", "borderRadius": 10, "padding": 10, "whiteSpace": "pre-line", "textAlign": "center", "width": 170 } },
+    { "id": "flow", "position": { "x": 320, "y": 420 },
+      "data": { "label": "React Flow\nDiagramas arrastrables" },
+      "style": { "background": "#ec4899", "color": "#fff", "borderRadius": 10, "padding": 10, "whiteSpace": "pre-line", "textAlign": "center", "width": 170 } },
+
+    { "id": "engine", "position": { "x": 640, "y": 220 },
+      "data": { "label": "MkDocs + Material\n(build local)" },
+      "style": { "background": "#1e2129", "color": "#fff", "border": "2px solid #8b86ff", "borderRadius": 10, "padding": 10, "whiteSpace": "pre-line", "textAlign": "center", "width": 180 } },
+
+    { "id": "wiki", "position": { "x": 960, "y": 210 },
+      "data": { "label": "Tu wiki interactiva" },
+      "style": { "background": "#5b56f0", "color": "#fff", "borderRadius": 16, "padding": 14, "fontWeight": 700, "fontSize": 16, "width": 190, "boxShadow": "0 8px 24px rgba(91,86,240,0.45)" } }
+  ],
+  "edges": [
+    { "id": "e-md-mermaid", "source": "md", "target": "mermaid", "animated": true, "type": "smoothstep", "style": { "stroke": "#5b56f0", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#5b56f0" } },
+    { "id": "e-md-chart", "source": "md", "target": "chart", "animated": true, "type": "smoothstep", "style": { "stroke": "#22c55e", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#22c55e" } },
+    { "id": "e-md-katex", "source": "md", "target": "katex", "animated": true, "type": "smoothstep", "style": { "stroke": "#f59e0b", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#f59e0b" } },
+    { "id": "e-md-flow", "source": "md", "target": "flow", "animated": true, "type": "smoothstep", "style": { "stroke": "#ec4899", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#ec4899" } },
+
+    { "id": "e-mermaid-engine", "source": "mermaid", "target": "engine", "animated": true, "type": "smoothstep", "style": { "stroke": "#8b86ff", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#8b86ff" } },
+    { "id": "e-chart-engine", "source": "chart", "target": "engine", "animated": true, "type": "smoothstep", "style": { "stroke": "#8b86ff", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#8b86ff" } },
+    { "id": "e-katex-engine", "source": "katex", "target": "engine", "animated": true, "type": "smoothstep", "style": { "stroke": "#8b86ff", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#8b86ff" } },
+    { "id": "e-flow-engine", "source": "flow", "target": "engine", "animated": true, "type": "smoothstep", "style": { "stroke": "#8b86ff", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#8b86ff" } },
+
+    { "id": "e-engine-wiki", "source": "engine", "target": "wiki", "animated": true, "type": "smoothstep", "label": "listo en segundos", "style": { "stroke": "#5b56f0", "strokeWidth": 3 }, "markerEnd": { "type": "arrowclosed", "color": "#5b56f0" } }
+  ]
+}
+```
+````
+
+Se ve así de renderizado:
+
+```flow
+{
+  "nodes": [
+    { "id": "md", "position": { "x": 0, "y": 220 },
+      "data": { "label": "Tu Markdown" },
+      "style": { "background": "#1e2129", "color": "#fff", "border": "2px solid #5b56f0", "borderRadius": 12, "padding": 10, "fontWeight": 600, "width": 150 } },
+
+    { "id": "mermaid", "position": { "x": 320, "y": 0 },
+      "data": { "label": "Mermaid\nDiagramas fijos" },
+      "style": { "background": "#5b56f0", "color": "#fff", "borderRadius": 10, "padding": 10, "whiteSpace": "pre-line", "textAlign": "center", "width": 170 } },
+    { "id": "chart", "position": { "x": 320, "y": 140 },
+      "data": { "label": "Chart.js\nGráficas" },
+      "style": { "background": "#22c55e", "color": "#0b1a10", "borderRadius": 10, "padding": 10, "whiteSpace": "pre-line", "textAlign": "center", "width": 170 } },
+    { "id": "katex", "position": { "x": 320, "y": 280 },
+      "data": { "label": "KaTeX\nFórmulas" },
+      "style": { "background": "#f59e0b", "color": "#231a06", "borderRadius": 10, "padding": 10, "whiteSpace": "pre-line", "textAlign": "center", "width": 170 } },
+    { "id": "flow", "position": { "x": 320, "y": 420 },
+      "data": { "label": "React Flow\nDiagramas arrastrables" },
+      "style": { "background": "#ec4899", "color": "#fff", "borderRadius": 10, "padding": 10, "whiteSpace": "pre-line", "textAlign": "center", "width": 170 } },
+
+    { "id": "engine", "position": { "x": 640, "y": 220 },
+      "data": { "label": "MkDocs + Material\n(build local)" },
+      "style": { "background": "#1e2129", "color": "#fff", "border": "2px solid #8b86ff", "borderRadius": 10, "padding": 10, "whiteSpace": "pre-line", "textAlign": "center", "width": 180 } },
+
+    { "id": "wiki", "position": { "x": 960, "y": 210 },
+      "data": { "label": "Tu wiki interactiva" },
+      "style": { "background": "#5b56f0", "color": "#fff", "borderRadius": 16, "padding": 14, "fontWeight": 700, "fontSize": 16, "width": 190, "boxShadow": "0 8px 24px rgba(91,86,240,0.45)" } }
+  ],
+  "edges": [
+    { "id": "e-md-mermaid", "source": "md", "target": "mermaid", "animated": true, "type": "smoothstep", "style": { "stroke": "#5b56f0", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#5b56f0" } },
+    { "id": "e-md-chart", "source": "md", "target": "chart", "animated": true, "type": "smoothstep", "style": { "stroke": "#22c55e", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#22c55e" } },
+    { "id": "e-md-katex", "source": "md", "target": "katex", "animated": true, "type": "smoothstep", "style": { "stroke": "#f59e0b", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#f59e0b" } },
+    { "id": "e-md-flow", "source": "md", "target": "flow", "animated": true, "type": "smoothstep", "style": { "stroke": "#ec4899", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#ec4899" } },
+
+    { "id": "e-mermaid-engine", "source": "mermaid", "target": "engine", "animated": true, "type": "smoothstep", "style": { "stroke": "#8b86ff", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#8b86ff" } },
+    { "id": "e-chart-engine", "source": "chart", "target": "engine", "animated": true, "type": "smoothstep", "style": { "stroke": "#8b86ff", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#8b86ff" } },
+    { "id": "e-katex-engine", "source": "katex", "target": "engine", "animated": true, "type": "smoothstep", "style": { "stroke": "#8b86ff", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#8b86ff" } },
+    { "id": "e-flow-engine", "source": "flow", "target": "engine", "animated": true, "type": "smoothstep", "style": { "stroke": "#8b86ff", "strokeWidth": 2 }, "markerEnd": { "type": "arrowclosed", "color": "#8b86ff" } },
+
+    { "id": "e-engine-wiki", "source": "engine", "target": "wiki", "animated": true, "type": "smoothstep", "label": "listo en segundos", "style": { "stroke": "#5b56f0", "strokeWidth": 3 }, "markerEnd": { "type": "arrowclosed", "color": "#5b56f0" } }
+  ]
+}
+```
+
+**Así se ve una vez renderizado** (arrastra cualquier nodo — la posición inicial es solo un punto de partida, no un límite):
+
+![Diagrama arrastrable de React Flow mostrando el Markdown ramificándose en Mermaid, Chart.js, KaTeX y React Flow, convergiendo en MkDocs y terminando en la wiki interactiva](assets/capturas/reactflow-arquitectura.png)
+
+> [!tip] Rendimiento e interacción
+> Igual que las gráficas, los diagramas ` ```flow ` se cargan de forma perezosa. Además de arrastrar nodos, el lector puede hacer zoom, desplazarse (pan) y usar el minimapa de la esquina para ubicarse en diagramas grandes.
+
 ## Gráficas
 
 Los bloques ` ```chart ` se renderizan como gráficas reales de [Chart.js](https://www.chartjs.org/docs/latest/), no como texto. Escribes la configuración completa en JSON — tipo de gráfica, etiquetas, datos, ejes y colores — exactamente igual que llamarías a `new Chart(ctx, config)` en JavaScript.
@@ -367,6 +475,7 @@ Tablas Markdown estándar — como las que ya viste en esta misma página.
 | Incrustar otra nota completa | `![[Nota]]` |
 | Aviso o nota destacada | `> [!tipo]` |
 | Diagrama | ` ```mermaid ` |
+| Diagrama arrastrable | ` ```flow ` |
 | Gráfica de datos | ` ```chart ` |
 | Fórmula matemática | `$...$` o `$$...$$` |
 | Icono | `:nombre-del-icono:` |
