@@ -4,7 +4,7 @@
 
 ### Markdown Automatizado por Repo y Consulta
 
-`v1.2.0`
+`v1.3.1`
 
 ---
 
@@ -23,6 +23,7 @@ MARC no tiene servidor central ni cuenta de usuario. Cada persona conecta **sus 
 - No hay dependencia de que un tercer servicio esté disponible para que puedas leer tu wiki.
 - Cada repositorio conectado es independiente de los demás — puedes tener varios equipos, varios proyectos, sin que se mezclen entre sí.
 - Una vez sincronizado, funciona sin conexión: lees la última copia local que se trajo con éxito.
+- Ni siquiera necesitas GitHub: también puedes apuntar MARC directo a una **carpeta de tu equipo** — con o sin Git — para wikis que nunca salen de tu máquina. Ver [[01 Conectar tu primer repositorio]].
 
 En otras palabras: MARC es una capa de lectura sobre Git, no una plataforma. El control de la información nunca sale de tu repositorio.
 

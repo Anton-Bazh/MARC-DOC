@@ -10,10 +10,13 @@ De izquierda a derecha:
 |---|---|
 | **Flecha atrás** | Vuelve a la página anterior (como el atrás del navegador) |
 | **Logo** | Te lleva de regreso al [[02 El Hub\|Hub]], sin importar en qué wiki estés |
-| **Ícono de repositorios** | Abre el panel de [[04 Gestionar tus repositorios]] |
-| **Ícono de información** | Abre el modal "Acerca de" — ver [[07 Créditos]] |
+| **Selector de repositorio** (muestra el nombre del repo activo, ej. `MARC-DOC ▾`) | Abre el panel de [[04 Gestionar tus repositorios]] — el nombre visible es justamente el de la wiki que estás leyendo, para que nunca tengas dudas de dónde estás |
+| **⋮ Más opciones** | Menú con **Acerca de MARC** (ver [[07 Créditos]]) y **Salir de MARC** |
 | **Buscador** | Búsqueda instantánea dentro de la wiki activa, con resaltado de resultados |
 | **Interruptor de tema** | Alterna entre claro, oscuro y automático (según tu sistema) |
+
+> [!info] Salir de MARC
+> "Salir" en el menú **⋮ Más opciones** cierra la app de verdad: apaga el servidor local que corre en tu equipo, no solo la ventana. Te pide confirmación antes de hacerlo — útil si quieres liberar el puerto o la memoria que usa MARC sin tener que buscar el proceso a mano. Volver a abrir MARC lo arranca de nuevo desde cero.
 
 ## La ruta (breadcrumb)
 

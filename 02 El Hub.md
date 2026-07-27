@@ -4,9 +4,9 @@ El Hub es la pantalla principal de la app — lo primero que ves siempre al abri
 
 ## Qué trae cada tarjeta
 
-- **Nombre y dueño** del repositorio (ej. `tu-equipo / wiki-interna`).
+- **Nombre** del repositorio o carpeta, y su **dueño** de GitHub si viene de ahí (ej. `tu-equipo / wiki-interna`) — las carpetas locales (ver [[01 Conectar tu primer repositorio]]) muestran un ícono de carpeta en vez del de GitHub, y no tienen dueño.
 - **Cantidad de páginas** que tiene esa wiki.
-- **Última actualización**, en fecha relativa ("hoy", "hace 3 días", "hace 2 meses") — la fecha del último commit real en el repositorio.
+- **Última actualización**, en fecha relativa ("hoy", "hace 3 días", "hace 2 meses") — la fecha del último commit real, si el repositorio (o la carpeta local con su propio Git) la tiene.
 - Un indicador **activo** (punto verde) si esa es la wiki que se está sirviendo en este momento.
 
 Pulsa cualquier tarjeta para abrir esa wiki. Si no era la activa, la app la sincroniza y la vuelve la activa automáticamente.
