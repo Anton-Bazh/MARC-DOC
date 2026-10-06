@@ -55,6 +55,10 @@ No. La exportación se genera completa en tu equipo o tableta. Ver [[06 Exportar
 
 Google Docs no usa algunas cosas que Word sí (por ejemplo, ecuaciones y gráficas nativas se ven más simples). Si el documento va a abrirse en programas distintos, exporta en el modo **Como imagen**: se ve igual en todos. Ver [[06 Exportar PDF, Word y .marc]].
 
+## ¿Puedo usar un .marc fuera de MARC?
+
+Sí. Es un formato abierto: un ZIP con tus archivos Markdown e imágenes tal cual. Renómbralo a `.zip` para verlo con cualquier programa, o créalo y léelo con tus propias herramientas siguiendo [[13 Especificación del formato .marc]].
+
 ## ¿Qué significan EN, E y M?
 
 Son las tres ediciones de MARC: **EN** es el escritorio en navegador (la ligera), **E** el escritorio con ventana propia (en desarrollo) y **M** el móvil. E y M son las ediciones completas y reciben primero las funciones nuevas; EN las recibe después, si encajan con su idea de ligereza. Todas comparten el primer número de versión (la generación). Ver [[10 Ediciones y versiones]].

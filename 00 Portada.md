@@ -83,6 +83,7 @@ En otras palabras: MARC es una capa de lectura y consulta sobre tus archivos, no
 | [[10 Ediciones y versiones]] | Las ediciones EN, E y M: diferencias, razón de cada una, cómo conseguirlas y cómo se numeran sus versiones |
 | [[11 Preguntas frecuentes]] | Soluciones a los problemas más comunes |
 | [[12 Créditos]] | Quién hizo esta herramienta y con qué está construida |
+| [[13 Especificación del formato .marc]] | La especificación oficial y abierta del `.marc`: para crear o leer paquetes con tus propias herramientas |
 
 > [!tip] ¿Tienes prisa?
 > En el escritorio (EN), ve directo a [[01 Conectar tu primer repositorio]]. En una tableta o teléfono (M), a [[08 MARC en tabletas y teléfonos]]. ¿No sabes cuál edición es la tuya? Ver [[10 Ediciones y versiones]].

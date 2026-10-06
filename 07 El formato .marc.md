@@ -9,6 +9,14 @@ flowchart LR
     O -- "Abrir en MARC" --> L["La wiki, al instante<br/>y sin conexión"]
 ```
 
+## Un formato abierto
+
+El `.marc` no es un formato cerrado de MARC: es un **ZIP estándar** con una estructura sencilla y documentada.
+
+- Cambia `.marc` por `.zip` y cualquier programa de compresión lo abre; adentro están tus archivos Markdown e imágenes tal cual, sin pérdida de calidad.
+- Cualquiera puede **crear o leer** `.marc` con sus propias herramientas (un script, otra aplicación, una integración continua), sin necesitar MARC.
+- La especificación oficial, con el formato del manifiesto, las reglas de seguridad y ejemplos listos para usar, está en [[13 Especificación del formato .marc]].
+
 ## Para qué sirve
 
 - **Compartir** una wiki con alguien que no tiene acceso a tu repositorio de GitHub.
