@@ -2,12 +2,13 @@
 
 La primera vez que abres MARC no hay nada conectado — verás el [[02 El Hub|Hub]] vacío con un botón para conectar tu primer repositorio. Este es el único paso manual de toda la herramienta: una vez conectado, todo lo demás es automático.
 
-Hay dos formas de conectar una wiki, según dónde viva tu documentación:
+Hay tres formas de conectar una wiki en el escritorio, según dónde viva tu documentación (en tabletas y teléfonos, ver [[08 MARC en tabletas y teléfonos]]):
 
 | | Cuándo usarla |
 |---|---|
 | **GitHub** | Tu documentación ya vive en un repositorio remoto — de tu equipo, o tuyo — y quieres que MARC la traiga y la mantenga sincronizada sola. |
 | **Carpeta local** | Tu documentación vive (o va a vivir) directo en tu equipo — con Git propio o sin ningún control de versiones — y no necesitas ni quieres que salga de ahí. |
+| **Archivo .marc** | Alguien te pasó una wiki empaquetada en un solo archivo, o quieres abrir una que exportaste. Se lee al instante y sin conexión. |
 
 ## GitHub
 
@@ -41,6 +42,15 @@ MARC lee esa carpeta tal cual, en el momento en que la abres — no la copia ni 
 
 > [!warning] Esa carpeta nunca se toca al desconectar
 > Igual que con la carpeta de destino avanzada de GitHub: si quitas un repositorio conectado como carpeta local, MARC olvida la conexión pero **jamás borra la carpeta** — es tuya, tú decides qué hacer con ella.
+
+## Archivo .marc
+
+En el Hub, **Abrir archivo .marc** (o la pestaña **Archivo .marc** del panel de conexión) te deja elegir el archivo. MARC lo valida y lo abre como una wiki más:
+
+- Si el `.marc` salió de un **repositorio de Git**, queda en **solo lectura**: la fuente de verdad sigue siendo el repositorio. MARC te avisa si el repositorio tiene una versión más nueva (para un repositorio privado te pedirá el token, que se guarda aparte, nunca en el archivo).
+- Si salió de una **carpeta local**, es **editable**: el botón **Editar** de cada página guarda el cambio de vuelta en el `.marc`.
+
+Más detalle en [[07 El formato .marc]].
 
 ## ¿Cuándo necesito un token?
 

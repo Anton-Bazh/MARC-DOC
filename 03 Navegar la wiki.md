@@ -11,7 +11,8 @@ De izquierda a derecha:
 | **Flecha atrás** | Vuelve a la página anterior (como el atrás del navegador) |
 | **Logo** | Te lleva de regreso al [[02 El Hub\|Hub]], sin importar en qué wiki estés |
 | **Selector de repositorio** (muestra el nombre del repo activo, ej. `MARC-DOC ▾`) | Abre el panel de [[04 Gestionar tus repositorios]] — el nombre visible es justamente el de la wiki que estás leyendo, para que nunca tengas dudas de dónde estás |
-| **⋮ Más opciones** | Menú con **Acerca de MARC** (ver [[07 Créditos]]) y **Salir de MARC** |
+| **⋮ Más opciones** | **Descargar PDF**, **Descargar Word**, **Exportar .marc** (ver [[06 Exportar PDF, Word y .marc]]), **Acerca de MARC** (versión `E`, ver [[12 Créditos]]) y **Salir de MARC** |
+| **Editar** (lápiz) | Solo en páginas de un `.marc` local: abre el editor de esa página; **Guardar** (o Ctrl+S) escribe el cambio en el `.marc`. Ver [[07 El formato .marc]] |
 | **Buscador** | Búsqueda instantánea dentro de la wiki activa, con resaltado de resultados |
 | **Interruptor de tema** | Alterna entre claro, oscuro y automático (según tu sistema) |
 

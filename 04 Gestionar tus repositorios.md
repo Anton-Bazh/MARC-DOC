@@ -24,12 +24,17 @@ Pulsa cualquier repositorio de tu lista que no esté marcado como **activo**. La
 > [!tip]
 > En el uso normal no hace falta tocar ningún botón: los dos tipos de repositorio se mantienen al día solos. Los botones existen para el momento puntual en que no quieres esperar ni un segundo.
 
+## Archivos .marc
+
+Un `.marc` abierto aparece con un icono de paquete y su modo: **Git · solo lectura** o **Local · editable**. Su botón **Recargar el archivo .marc** vuelve a leerlo del disco (útil si alguien te mandó una versión nueva con el mismo nombre). Para un `.marc` de Git verás además si su repositorio está **al día** o tiene una **versión nueva**. Ver [[07 El formato .marc]].
+
 ## Quitar un repositorio
 
 El botón **Quitar** desconecta el repositorio de MARC. Qué tan a fondo depende de dónde vivía:
 
 - **Clon interno de MARC** (GitHub, sin carpeta de destino elegida a mano): se borra la copia local y el token guardado, si tenía uno. El repositorio remoto en GitHub **no se toca**.
 - **Carpeta elegida por ti** (destino avanzado de GitHub, o cualquier carpeta local): MARC **nunca borra esa carpeta**. Es tuya — olvida la conexión y ya, tú decides qué hacer con el contenido.
+- **Archivo .marc**: se borra la copia de lectura que MARC extrajo; el archivo `.marc` **no se toca**.
 
 Si vuelves a conectar la misma fuente después, la app la reconoce: un repositorio de GitHub se clona de nuevo desde cero (o retoma la carpeta, si sigue ahí); una carpeta local simplemente se vuelve a activar tal como está.
 

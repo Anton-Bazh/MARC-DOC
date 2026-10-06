@@ -12,9 +12,13 @@ Entre plataformas remotas, esta versión únicamente soporta URLs con el formato
 
 Este mensaje aparece si el motor de renderizado interno no llegó a levantar a tiempo. Espera unos segundos y recarga — si persiste, ve al panel de [[04 Gestionar tus repositorios]] y usa **Resincronizar**.
 
-## ¿Mis archivos en el repositorio se modifican al conectarlos?
+## ¿Mis archivos se modifican al conectarlos?
 
-No, nunca. La app solo **lee** tu repositorio para mostrarlo — jamás escribe, modifica ni hace commits sobre tu contenido fuente. El repositorio de Git es siempre la única fuente de verdad.
+No. Conectar, leer, buscar y exportar **solo leen** tus archivos. MARC escribe únicamente cuando tú lo decides: al pulsar **Guardar** en el editor (un `.marc` local en el escritorio; carpetas, `.marc` y documentos sueltos en el móvil) o al **aplicar** un cambio que te propuso el [[09 Asistente IA|asistente]] después de revisarlo. MARC nunca hace commits ni sube nada a GitHub.
+
+## Guardé un cambio por error, ¿puedo recuperar la versión anterior?
+
+En el móvil, sí: antes de cada guardado, la versión anterior queda en `MARC/Respaldos/<wiki>/<fecha>/`, con la misma ruta del archivo. Ver [[08 MARC en tabletas y teléfonos]].
 
 ## ¿Necesito internet todo el tiempo?
 
@@ -37,7 +41,23 @@ Depende de cómo conectaste esa wiki (ver [[01 Conectar tu primer repositorio]])
 
 ## ¿Dónde se guarda mi token de acceso?
 
-En el llavero nativo de tu sistema operativo, cifrado — nunca en un archivo de texto plano. Más detalle en [[01 Conectar tu primer repositorio]].
+En el escritorio, en el llavero nativo de tu sistema operativo; en el móvil, cifrado en el almacén seguro de Android. Nunca en un archivo de texto plano y nunca dentro de un `.marc`. Lo mismo vale para las claves de los proveedores de IA. Más detalle en [[01 Conectar tu primer repositorio]].
+
+## ¿La IA lee todos mis documentos?
+
+Solo lo que tú eliges en **Ajustes → IA → Qué recibe la IA** (por defecto, solo la página abierta), y solo cuando tú preguntas. Va directo de tu dispositivo a tu proveedor; con **Local (Ollama)** no sale de tu red. Ver [[09 Asistente IA]].
+
+## ¿Necesito internet para exportar a PDF o Word?
+
+No. La exportación se genera completa en tu equipo o tableta. Ver [[06 Exportar PDF, Word y .marc]].
+
+## Mi Word se ve un poco distinto en Google Docs
+
+Google Docs no usa algunas cosas que Word sí (por ejemplo, ecuaciones y gráficas nativas se ven más simples). Si el documento va a abrirse en programas distintos, exporta en el modo **Como imagen**: se ve igual en todos. Ver [[06 Exportar PDF, Word y .marc]].
+
+## ¿Qué significan la E y la M de la versión?
+
+**E** es MARC de escritorio y **M** MARC móvil. Las dos comparten el primer número (la generación); los demás pueden variar en cada una. Ver [[10 Versiones]].
 
 ## ¿Qué hace "Salir" y por qué me pide confirmar?
 
@@ -45,8 +65,8 @@ Cierra MARC de verdad: apaga el servidor local que corre en tu equipo, no solo l
 
 ## ¿Por qué esta documentación ya no dice "Wiki Desktop Client"?
 
-Ese fue el nombre de trabajo original del proyecto. El nombre oficial hoy es **MARC** (Markdown Automatizado por Repo y Consulta) — mismo motor, mismo comportamiento, solo un nombre definitivo. Ver [[07 Créditos]].
+Ese fue el nombre de trabajo original del proyecto. El nombre oficial hoy es **MARC** (Markdown Automatizado por Repo y Consulta) — mismo motor, mismo comportamiento, solo un nombre definitivo. Ver [[12 Créditos]].
 
 ## ¿Esta documentación siempre está al día con mi versión de la app?
 
-El **contenido** sí: este mismo repositorio se sincroniza solo cada vez que abres MARC, igual que cualquier otro repositorio conectado — ver [[01 Conectar tu primer repositorio]]. Lo que puede no coincidir es el **instalador**: cada nueva función se documenta aquí en cuanto queda lista en el código, pero el `.exe`/`.deb` que tienes instalado solo se actualiza cuando lo reinstalas con una versión nueva. Si tu instalación es más antigua que el número que ves aquí o en [[00 Portada|portada]]/[[07 Créditos]], esta documentación puede describir funciones que tu copia instalada todavía no trae empaquetadas. Compara siempre contra el número que ves en **Acerca de** dentro de la propia app.
+El **contenido** sí, en las dos aplicaciones: esta documentación vive en un repositorio de Git y MARC la actualiza sola. En el escritorio se sincroniza cada vez que abres MARC, igual que cualquier otro repositorio conectado — ver [[01 Conectar tu primer repositorio]]. En el móvil se actualiza desde el mismo repositorio cuando hay conexión; sin conexión, ves la última copia que se trajo (o la que viene dentro de la app). Lo que puede no coincidir es el **instalador**: cada nueva función se documenta aquí en cuanto queda lista en el código, pero el `.exe`/`.deb` que tienes instalado solo se actualiza cuando lo reinstalas con una versión nueva. Si tu instalación es más antigua que el número que ves aquí o en [[00 Portada|portada]]/[[12 Créditos]], esta documentación puede describir funciones que tu copia instalada todavía no trae empaquetadas. Compara siempre contra el número que ves en **Acerca de** dentro de la propia app (`E…` en escritorio, `M…` en móvil, ver [[10 Versiones]]).
