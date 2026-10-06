@@ -55,9 +55,13 @@ No. La exportación se genera completa en tu equipo o tableta. Ver [[06 Exportar
 
 Google Docs no usa algunas cosas que Word sí (por ejemplo, ecuaciones y gráficas nativas se ven más simples). Si el documento va a abrirse en programas distintos, exporta en el modo **Como imagen**: se ve igual en todos. Ver [[06 Exportar PDF, Word y .marc]].
 
-## ¿Qué significan la E y la M de la versión?
+## ¿Qué significan EN, E y M?
 
-**E** es MARC de escritorio y **M** MARC móvil. Las dos comparten el primer número (la generación); los demás pueden variar en cada una. Ver [[10 Versiones]].
+Son las tres ediciones de MARC: **EN** es el escritorio en navegador (la ligera), **E** el escritorio con ventana propia (en desarrollo) y **M** el móvil. E y M son las ediciones completas y reciben primero las funciones nuevas; EN las recibe después, si encajan con su idea de ligereza. Todas comparten el primer número de versión (la generación). Ver [[10 Ediciones y versiones]].
+
+## ¿Dónde consigo MARC?
+
+Por ahora el instalador de escritorio (EN) y la app móvil (M) se entregan directamente; para conseguirlos, contacta al autor (ver [[12 Créditos]]). Más adelante se busca publicar M en Google Play y AppGallery. Ver [[10 Ediciones y versiones]].
 
 ## ¿Qué hace "Salir" y por qué me pide confirmar?
 
@@ -69,4 +73,4 @@ Ese fue el nombre de trabajo original del proyecto. El nombre oficial hoy es **M
 
 ## ¿Esta documentación siempre está al día con mi versión de la app?
 
-El **contenido** sí, en las dos aplicaciones: esta documentación vive en un repositorio de Git y MARC la actualiza sola. En el escritorio se sincroniza cada vez que abres MARC, igual que cualquier otro repositorio conectado — ver [[01 Conectar tu primer repositorio]]. En el móvil se actualiza desde el mismo repositorio cuando hay conexión; sin conexión, ves la última copia que se trajo (o la que viene dentro de la app). Lo que puede no coincidir es el **instalador**: cada nueva función se documenta aquí en cuanto queda lista en el código, pero el `.exe`/`.deb` que tienes instalado solo se actualiza cuando lo reinstalas con una versión nueva. Si tu instalación es más antigua que el número que ves aquí o en [[00 Portada|portada]]/[[12 Créditos]], esta documentación puede describir funciones que tu copia instalada todavía no trae empaquetadas. Compara siempre contra el número que ves en **Acerca de** dentro de la propia app (`E…` en escritorio, `M…` en móvil, ver [[10 Versiones]]).
+El **contenido** sí, en todas las ediciones: esta documentación vive en un repositorio de Git y MARC la actualiza sola. En el escritorio en navegador (EN) se sincroniza cada vez que abres MARC, igual que cualquier otro repositorio conectado — ver [[01 Conectar tu primer repositorio]]. En el móvil (M) se actualiza desde el mismo repositorio cuando hay conexión; sin conexión, ves la última copia que se trajo (o la que viene dentro de la app). Lo que puede no coincidir es el **instalador**: cada nueva función se documenta aquí en cuanto queda lista en el código, pero el `.exe`/`.deb` que tienes instalado solo se actualiza cuando lo reinstalas con una versión nueva. Si tu instalación es más antigua que el número que ves aquí o en [[00 Portada|portada]]/[[12 Créditos]], esta documentación puede describir funciones que tu copia instalada todavía no trae empaquetadas. Compara siempre contra el número que ves en **Acerca de** dentro de la propia app (`EN…` en el escritorio en navegador, `M…` en móvil, ver [[10 Ediciones y versiones]]).

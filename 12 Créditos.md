@@ -2,9 +2,9 @@
 
 ## Acerca de MARC
 
-**MARC** — *Markdown Automatizado por Repo y Consulta* — nació con otro nombre de trabajo, **Wiki Desktop Client**, mientras la idea todavía se estaba probando: leer la documentación técnica de un equipo directo desde su repositorio de Git, sin nube, sin plataforma, sin fricción. El nombre cambió; la idea y la arquitectura descentralizada detrás — ver [[00 Portada|Portada]] — se mantienen igual desde el primer commit. Con la **generación 2** MARC pasó de ser un lector de escritorio a una familia de dos aplicaciones (escritorio y móvil) con formato portable, exportación a PDF y Word y asistente de IA.
+**MARC** — *Markdown Automatizado por Repo y Consulta* — nació con otro nombre de trabajo, **Wiki Desktop Client**, mientras la idea todavía se estaba probando: leer la documentación técnica de un equipo directo desde su repositorio de Git, sin nube, sin plataforma, sin fricción. El nombre cambió; la idea y la arquitectura descentralizada detrás — ver [[00 Portada|Portada]] — se mantienen igual desde el primer commit. Nació **ligero**, para consultar tus wikis sin tener una aplicación pesada abierta: esa edición sigue viva como **EN**. Con la **generación 2** MARC se convirtió en una familia de ediciones —EN (escritorio en navegador), M (móvil) y, en desarrollo, E (escritorio con ventana propia)— con formato portable, exportación a PDF y Word y asistente de IA.
 
-`E2.0.0` · `M2.0.0` — ver [[10 Versiones]]
+`EN2.0.0` · `M2.0.0` — ver [[10 Ediciones y versiones]]
 
 ## Arquitectura, a grandes rasgos
 
@@ -15,7 +15,7 @@ flowchart LR
     subgraph Tuyo["Tuyo"]
         REPO["GitHub, carpeta local<br/>o archivo .marc"]
     end
-    subgraph E["Escritorio · E"]
+    subgraph E["Escritorio en navegador · EN"]
         MOTOR["Motor de MARC<br/>sincroniza y renderiza"]
         NAV["Tu navegador"]
     end

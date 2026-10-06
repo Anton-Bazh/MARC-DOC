@@ -2,7 +2,7 @@
 
 La primera vez que abres MARC no hay nada conectado — verás el [[02 El Hub|Hub]] vacío con un botón para conectar tu primer repositorio. Este es el único paso manual de toda la herramienta: una vez conectado, todo lo demás es automático.
 
-Hay tres formas de conectar una wiki en el escritorio, según dónde viva tu documentación (en tabletas y teléfonos, ver [[08 MARC en tabletas y teléfonos]]):
+Hay tres formas de conectar una wiki en el escritorio (EN), según dónde viva tu documentación (en tabletas y teléfonos, ver [[08 MARC en tabletas y teléfonos]]):
 
 | | Cuándo usarla |
 |---|---|

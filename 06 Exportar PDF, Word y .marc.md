@@ -2,7 +2,7 @@
 
 MARC puede entregar cualquier wiki conectada en tres formatos. Todo se genera **en tu equipo o tableta, sin conexión**: tu documentación no se sube a ningún servicio para convertirla.
 
-| Formato | Para qué sirve | Escritorio | Móvil |
+| Formato | Para qué sirve | Escritorio (EN) | Móvil (M) |
 |---|---|---|---|
 | **PDF** | Leer, imprimir o enviar una versión cerrada, que se ve igual en todas partes | Más opciones → **Descargar PDF** | Descargar → **Esta página** o **Wiki completa** |
 | **Word (.docx)** | Entregar un documento que otra persona pueda **editar** en Word, WPS, LibreOffice o Google Docs | Más opciones → **Descargar Word** | Descargar → **Word** |
