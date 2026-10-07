@@ -21,11 +21,12 @@ La primera vez, MARC te pide permiso para crear una carpeta **`MARC`** en la ra�
 
 ## Conectar una wiki
 
-Toca **+** en la barra lateral o **+ Conectar** en el inicio:
+Toca **+** en la barra lateral o **+ Conectar** en el inicio (pestañas **Git**, **Carpeta local** y **Crear**; los `.marc` se abren con *Abrir con MARC*):
 
 | Fuente | Qué hace MARC |
 |---|---|
-| **Repositorio de Git** | Lo clona por HTTPS (público, o privado con token) en `MARC/Wikis` |
+| **Git** | Lo clona por HTTPS con **todo su historial** en `MARC/Wikis`: de tu lista de GitHub (con tu [[15 Tu cuenta de GitHub\|cuenta]], también privados) o pegando la URL (privado con token) |
+| **Crear** | Una wiki nueva en GitHub o local ([[01 Conectar tu primer repositorio#En E y M]]) |
 | **Carpeta local** | Hace una copia de lectura en `MARC/Wikis`. Si la carpeta ya está **dentro** de `MARC/Wikis`, la usa tal cual, sin copiarla |
 | **Archivo .marc** | Lo abre y lo extrae en `MARC/Wikis`. Ver [[07 El formato .marc]] |
 
@@ -42,11 +43,11 @@ La barra lateral está organizada por zonas:
 
 | Zona | Qué hay |
 |---|---|
-| Arriba | Inicio (tus wikis) y hasta **4 fichas** de wiki; la que lees siempre se ve. Si tienes más, una ficha **+N** abre un selector con búsqueda. Debajo, **+** para conectar |
+| Arriba | Inicio (tus wikis) y hasta **4 fichas** de wiki; la que lees siempre se ve. Si tienes más, una ficha **+N** abre un selector con búsqueda. **Mantén pulsada** una ficha para quitar esa wiki. Debajo, **+** para conectar |
 | En medio (solo con una página abierta) | Índice, Editar, Secciones y Asistente |
 | Abajo | Buscar y **⋯ Más opciones** |
 
-**⋯ Más opciones** cambia según dónde estés: en el inicio muestra solo lo general (Tema, Documentación de uso, Extensiones, Ajustes, Acerca de); dentro de una página agrega las descargas y **Actualizar desde el origen**.
+**⋯ Más opciones** cambia según dónde estés: en el inicio muestra lo general (**Iniciar sesión con GitHub** o tu cuenta, Tema, Documentación de uso, Extensiones, Ajustes, Acerca de); dentro de una página agrega las descargas y **Actualizar desde el origen**.
 
 ![Más opciones dentro de una página](assets/capturas/movil/menu-mas-opciones.png)
 
@@ -58,7 +59,8 @@ La barra lateral está organizada por zonas:
 - Los diagramas **React Flow** son interactivos dentro de la página; su botón **ver en grande** los abre a pantalla completa (se cierra con × o *atrás*).
 - Las gráficas son interactivas: toca un punto para ver su valor.
 - **Extensiones** (en ⋯) enciende o apaga KaTeX, Mermaid, Chart.js y React Flow; apagadas, se muestra su código fuente.
-- Al **seleccionar texto** aparece la barra de MARC: Explicar, Resumir o Preguntar al [[09 Asistente IA|asistente]].
+- Al **seleccionar texto** (mantén pulsado) aparece la barra de MARC: **Copiar**, **Todo** (toda la página), y Explicar, Resumir o Preguntar al [[09 Asistente IA|asistente]].
+- Los enlaces a **PDF y textos** de la wiki se abren en el [[21 Visor de archivos|visor]], en ventana flotante o pantalla dividida.
 
 ![Buscar en tus wikis](assets/capturas/movil/buscar.png)
 
@@ -66,13 +68,13 @@ La barra lateral está organizada por zonas:
 
 ## Editar
 
-El lápiz de la barra lateral abre el editor de la página. Al **Guardar**:
+El lápiz de la barra lateral abre el editor de la página, en modo **Visual** (escribes sobre la página) o **Markdown**: ver [[17 Editar sobre la página]]. Al **Guardar**:
 
 | Origen de la wiki | Dónde se guarda |
 |---|---|
 | Carpeta local | En la copia de `MARC/Wikis` **y** en tu carpeta original; MARC lo verifica leyéndolo de nuevo y, si falla, restaura la versión anterior |
 | Archivo `.marc` | Se reescribe el `.marc` original con el cambio |
-| Git | Cambio local en el dispositivo; MARC nunca sube nada a GitHub |
+| Git | En el clon de la tableta, como **borrador**: aparece **Publicar · N** para subirlo en un commit ([[18 Publicar cambios (Git)]]) |
 | Documento `.md` suelto | En el archivo original |
 | Documentación de uso | **Solo lectura**: el lápiz se ve atenuado y el editor no se abre |
 
@@ -92,4 +94,21 @@ En el inicio, **mantén pulsada** su tarjeta y confirma. El mensaje te dice exac
 
 ## Ajustes
 
-**Ajustes** tiene cuatro pestañas: **Apariencia** (tema y color de acento), **IA** (ver [[09 Asistente IA]]), **Wikis** (origen de cada wiki, actualizar, exportar, quitar, carpeta MARC) y **Acerca de** (versión `M`).
+**Ajustes** tiene cinco pestañas: **Apariencia** (tema, color de acento, tamaño del texto y [[21 Visor de archivos|visor de archivos]]), **Accesibilidad** ([[20 Lectura cómoda y accesibilidad]]), **IA** (ver [[09 Asistente IA]]), **Wikis** (origen de cada wiki, actualizar, exportar, quitar, carpeta MARC) y **Acerca de** (versión `M`).
+
+## Lo nuevo en la tableta (M2.1.0 a M2.3.1)
+
+| Función | Dónde | Página |
+|---|---|---|
+| **Iniciar sesión con GitHub** | ⋯ → Iniciar sesión con GitHub | [[15 Tu cuenta de GitHub]] |
+| **Publicar** y **↻ actualizar** con Git de verdad (sin instalar nada) | Publicar · N en la barra de la página | [[18 Publicar cambios (Git)]] |
+| **Historial**, autoría y comparar; **Traer historial completo** para wikis viejas | Panel derecho → Historial | [[16 Historial y trabajo en equipo]] |
+| **Notas de equipo** | Panel derecho → Notas | [[19 Notas de equipo]] |
+| **«Aa»**, modo dislexia, luz de noche, regla, énfasis y **lector de voz** | «Aa» en la barra de la página; Ajustes → Accesibilidad | [[20 Lectura cómoda y accesibilidad]] |
+| **Visor** de PDF y textos | Toca un enlace a un archivo | [[21 Visor de archivos]] |
+
+> [!warning] Voz en tabletas Huawei
+> Si **Escuchar esta página** no suena, casi siempre falta una voz en tu idioma. En Huawei instala **SherpaTTS** y descarga la voz de tu idioma; en Android con Google, **Servicios de voz de Google**. Guía completa en [[20 Lectura cómoda y accesibilidad#Si no se oye]].
+
+> [!note] Para probarlo
+> [[22 Practica las funciones]] trae una wiki de práctica editable y un PDF de prueba.

@@ -8,7 +8,7 @@ title: Portada
 
 ### Markdown Automatizado por Repo y Consulta
 
-`EN2.0.0` · `M2.0.0`
+`EN2.0.0` · `E2.0.0` · `M2.3.1`
 
 ---
 
@@ -20,11 +20,11 @@ Empezó como una aplicación de escritorio ligera. Desde la versión 2 es una **
 |---|---|---|---|
 | Dónde corre | Windows y Linux, en tu navegador | Windows y Linux, en su propia ventana | Tabletas y teléfonos Android (8 o superior) |
 | Idea | **Ligera**: consultar sin tener una aplicación pesada abierta | **Completa**: todas las funciones de MARC en el escritorio | **Completa**: tus wikis en el bolsillo, sin conexión, con edición y asistente de IA |
-| Conectar | GitHub, carpeta local, archivo `.marc` | Previsto: las mismas fuentes que M | GitHub, carpeta local, archivo `.marc` y "Abrir con" desde cualquier gestor de archivos |
-| Exportar | PDF, Word y `.marc` | Previsto: PDF, Word y `.marc` | PDF, Word y `.marc` |
+| Conectar | GitHub, carpeta local, archivo `.marc` | GitHub (con tu cuenta), carpeta local, archivo `.marc` y doble clic en un `.marc` o `.md` | GitHub, carpeta local, archivo `.marc` y "Abrir con" desde cualquier gestor de archivos |
+| Exportar | PDF, Word y `.marc` | PDF, Word y `.marc` | PDF, Word y `.marc` |
 | Funciones nuevas | Después, si encajan con su ligereza | Primero | Primero |
-| Estado | Disponible | En desarrollo | Disponible |
-| Guía | Páginas [[01 Conectar tu primer repositorio\|01]] a [[05 Cómo escribir tu documentación\|05]] | — | [[08 MARC en tabletas y teléfonos]] y [[09 Asistente IA]] |
+| Estado | Disponible | Disponible (`E2.0.0`) | Disponible |
+| Guía | Páginas [[01 Conectar tu primer repositorio\|01]] a [[05 Cómo escribir tu documentación\|05]] | Páginas 01 a 06 y [[14 Novedades\|14]] a [[22 Practica las funciones\|22]] | [[08 MARC en tabletas y teléfonos]], [[09 Asistente IA]] y [[14 Novedades\|14]] a [[22 Practica las funciones\|22]] |
 
 La diferencia entre las tres, por qué existe cada una y cómo conseguirlas está en [[10 Ediciones y versiones]].
 
@@ -38,7 +38,7 @@ flowchart LR
     subgraph Apps["MARC"]
         EN["Escritorio en navegador · EN"]
         M["Móvil · M"]
-        E["Escritorio con ventana · E<br/>(en desarrollo)"]
+        E["Escritorio con ventana · E"]
     end
     subgraph Salidas["Lo que puedes entregar"]
         PDF["PDF"]
@@ -50,7 +50,7 @@ flowchart LR
     P --> EN & M & E
     EN --> PDF & W & MK
     M --> PDF & W & MK
-    E -.-> PDF & W & MK
+    E --> PDF & W & MK
 ```
 
 > [!info] Filosofía
@@ -58,12 +58,12 @@ flowchart LR
 
 ## Arquitectura descentralizada
 
-MARC no tiene servidor central ni cuenta de usuario:
+MARC no tiene servidor central ni cuenta propia (si quieres, te conectas con **tu** cuenta de GitHub, que vive solo en tu equipo: [[15 Tu cuenta de GitHub]]):
 
 - No hay una nube de MARC donde tu documentación se suba o se indexe.
 - Cada persona conecta **sus propias** fuentes, en su propio equipo o tableta.
 - Una vez sincronizada, cada wiki funciona **sin conexión**: también la exportación a PDF y Word, que se genera en tu dispositivo.
-- Lo único que puede salir a internet es lo que tú pides: sincronizar con GitHub, o una pregunta al [[09 Asistente IA|asistente]] con el proveedor de IA que tú configures.
+- Lo único que puede salir a internet es lo que tú pides: sincronizar o publicar en GitHub, una nota de equipo que decides publicar como *issue*, o una pregunta al [[09 Asistente IA|asistente]] con el proveedor de IA que tú configures.
 
 En otras palabras: MARC es una capa de lectura y consulta sobre tus archivos, no una plataforma. El control de la información nunca sale de tus manos.
 
@@ -84,6 +84,18 @@ En otras palabras: MARC es una capa de lectura y consulta sobre tus archivos, no
 | [[11 Preguntas frecuentes]] | Soluciones a los problemas más comunes |
 | [[12 Créditos]] | Quién hizo esta herramienta y con qué está construida |
 | [[13 Especificación del formato .marc]] | La especificación oficial y abierta del `.marc`: para crear o leer paquetes con tus propias herramientas |
+| [[14 Novedades]] | Qué trae cada versión y qué edición tiene qué |
+| [[15 Tu cuenta de GitHub]] | Iniciar sesión con un código, sin tokens |
+| [[16 Historial y trabajo en equipo]] | Quién escribió qué, qué cambió y a quién preguntar |
+| [[17 Editar sobre la página]] | Escribir sobre la página (Visual) sin tocar el resto del Markdown |
+| [[18 Publicar cambios (Git)]] | Guardar, Publicar, unir cambios, actualizar y resolver choques |
+| [[19 Notas de equipo]] | Comentarios por párrafo, con respuestas y en GitHub |
+| [[20 Lectura cómoda y accesibilidad]] | «Aa», modo dislexia, luz de noche, regla, énfasis y lector de voz |
+| [[21 Visor de archivos]] | Abrir PDF y textos aparte, en la página exacta |
+| [[22 Practica las funciones]] | Wiki de práctica editable, PDF de prueba y la documentación en PDF |
 
 > [!tip] ¿Tienes prisa?
-> En el escritorio (EN), ve directo a [[01 Conectar tu primer repositorio]]. En una tableta o teléfono (M), a [[08 MARC en tabletas y teléfonos]]. ¿No sabes cuál edición es la tuya? Ver [[10 Ediciones y versiones]].
+> En el escritorio (EN o E), ve directo a [[01 Conectar tu primer repositorio]]. En una tableta o teléfono (M), a [[08 MARC en tabletas y teléfonos]]. ¿Ya usas MARC? Mira [[14 Novedades]] y prueba todo en la [[22 Practica las funciones|wiki de práctica]]. ¿No sabes cuál edición es la tuya? Ver [[10 Ediciones y versiones]].
+
+> [!note] Esta documentación en PDF
+> Toda la documentación, con índice, en un solo archivo: [MARC — Documentación de uso.pdf](assets/MARC%20—%20Documentación%20de%20uso.pdf).

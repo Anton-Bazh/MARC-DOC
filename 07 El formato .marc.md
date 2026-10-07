@@ -44,6 +44,9 @@ Cada `.marc` recuerda de dónde salió:
 > [!info] Tus tokens nunca viajan en el .marc
 > Si el repositorio de origen es privado, el `.marc` no lleva ningún token ni contraseña. Para consultar si hay versión nueva, MARC te pide el token aparte y lo guarda en el almacén seguro de tu sistema.
 
+> [!note] Un .marc lleva el contenido, no la historia
+> Un `.marc` guarda las páginas e imágenes de la wiki, no su historial de Git. Por eso, al abrirlo no hay pestaña **Historial** ni **Publicar**: para eso conecta el repositorio original ([[16 Historial y trabajo en equipo]]).
+
 ## Crear un .marc
 
 Desde la wiki que quieras compartir: **Exportar .marc** (escritorio) o **Descargar → Formato portable** (móvil). Ver [[06 Exportar PDF, Word y .marc]].

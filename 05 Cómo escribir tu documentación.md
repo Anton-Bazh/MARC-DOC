@@ -42,6 +42,19 @@ Puedes enlazar entre páginas con la sintaxis `[[...]]`, igual que en [Obsidian]
 | `[[Nombre de la nota#Sección]]` | Enlace directo a una sección de esa página |
 | `[[Nombre de la nota\|Texto a mostrar]]` | Enlace con un texto distinto al nombre del archivo |
 
+## Enlaces a archivos (PDF, textos, .marc)
+
+Un enlace Markdown normal puede apuntar a cualquier archivo de la wiki. En **E** y **M**, MARC lo abre en el [[21 Visor de archivos|visor]], aparte de la página:
+
+| Escribes | Al pulsarlo |
+|---|---|
+| `[Manual](anexos/manual.pdf)` | Abre el PDF desde el principio |
+| `[Manual, pág. 3](anexos/manual.pdf#page=3)` | Abre el PDF **en la página 3** |
+| `[Datos](anexos/datos.csv)` | Abre el texto (también `.txt`, `.md`, `.json`, `.yaml`, `.log`) |
+| `[Práctica](anexos/practica.marc)` | Abre ese `.marc` como wiki, desde una copia |
+
+La ruta es **relativa a la página**; si el nombre tiene espacios, escríbelos como `%20` (`Mi%20manual.pdf`). Pruébalo: [este manual se abre en la página 3](assets/pruebas/manual-de-prueba.pdf#page=3).
+
 ## Transclusión (embeber una nota dentro de otra)
 
 Con `!` antes de los corchetes, en vez de enlazar, **incrustas** el contenido:

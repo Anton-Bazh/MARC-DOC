@@ -2,13 +2,13 @@
 
 ## Acerca de MARC
 
-**MARC** — *Markdown Automatizado por Repo y Consulta* — nació con otro nombre de trabajo, **Wiki Desktop Client**, mientras la idea todavía se estaba probando: leer la documentación técnica de un equipo directo desde su repositorio de Git, sin nube, sin plataforma, sin fricción. El nombre cambió; la idea y la arquitectura descentralizada detrás — ver [[00 Portada|Portada]] — se mantienen igual desde el primer commit. Nació **ligero**, para consultar tus wikis sin tener una aplicación pesada abierta: esa edición sigue viva como **EN**. Con la **generación 2** MARC se convirtió en una familia de ediciones —EN (escritorio en navegador), M (móvil) y, en desarrollo, E (escritorio con ventana propia)— con formato portable, exportación a PDF y Word y asistente de IA.
+**MARC** — *Markdown Automatizado por Repo y Consulta* — nació con otro nombre de trabajo, **Wiki Desktop Client**, mientras la idea todavía se estaba probando: leer la documentación técnica de un equipo directo desde su repositorio de Git, sin nube, sin plataforma, sin fricción. El nombre cambió; la idea y la arquitectura descentralizada detrás — ver [[00 Portada|Portada]] — se mantienen igual desde el primer commit. Nació **ligero**, para consultar tus wikis sin tener una aplicación pesada abierta: esa edición sigue viva como **EN**. Con la **generación 2** MARC se convirtió en una familia de ediciones —EN (escritorio en navegador), E (escritorio con ventana propia) y M (móvil)— con formato portable, exportación a PDF y Word, asistente de IA y, en E y M, edición visual, Git completo, trabajo en equipo y lectura accesible.
 
-`EN2.0.0` · `M2.0.0` — ver [[10 Ediciones y versiones]]
+`EN2.0.0` · `E2.0.0` · `M2.3.1` — ver [[10 Ediciones y versiones]] y [[14 Novedades]]
 
 ## Arquitectura, a grandes rasgos
 
-MARC corre **100% en tu equipo o tableta**: no hay ningún servidor de MARC en internet al que tu documentación viaje. En el escritorio, un proceso local lee tu repositorio, carpeta o `.marc` y te sirve la wiki en tu propio navegador. En el móvil, una aplicación nativa hace lo mismo con su propio núcleo, y comparte con el escritorio el formato `.marc` y los motores de PDF y Word.
+MARC corre **100% en tu equipo o tableta**: no hay ningún servidor de MARC en internet al que tu documentación viaje. En el escritorio, un proceso local lee tu repositorio, carpeta o `.marc` y te sirve la wiki en tu propio navegador. En el móvil y en el escritorio con ventana propia (E), una aplicación nativa hace lo mismo con el **núcleo** de MARC (compartido por las dos), y comparte con EN el formato `.marc` y los motores de PDF y Word.
 
 ```mermaid
 flowchart LR
@@ -19,7 +19,7 @@ flowchart LR
         MOTOR["Motor de MARC<br/>sincroniza y renderiza"]
         NAV["Tu navegador"]
     end
-    subgraph M["Móvil · M"]
+    subgraph M["Móvil · M y escritorio · E"]
         NUCLEO["Núcleo de MARC<br/>Git, .marc, Markdown, búsqueda"]
         APP["App nativa"]
     end
@@ -57,8 +57,13 @@ flowchart LR
 | :simple-android: | MARC móvil | [Kotlin](https://kotlinlang.org/) y [Jetpack Compose](https://developer.android.com/compose) |
 | :simple-rust: | Núcleo de MARC móvil | [Rust](https://www.rust-lang.org/): [comrak](https://github.com/kivikakk/comrak) (Markdown), [gix](https://github.com/GitoxideLabs/gitoxide) (Git), [zip](https://github.com/zip-rs/zip2) (formato `.marc`), unidos a la app con [UniFFI](https://github.com/mozilla/uniffi-rs) |
 | :material-shield-key-outline: | Claves en el móvil | Almacén seguro de Android (Keystore), cifrado AES-GCM |
+| :material-monitor: | MARC E (escritorio con ventana propia) | [Compose Multiplatform](https://www.jetbrains.com/compose-multiplatform/) (interfaz compartida con M), [JetBrains Runtime](https://github.com/JetBrains/JetBrainsRuntime) con [JCEF](https://github.com/chromiumembedded/java-cef) (Chromium integrado para gráficas, PDF y el visor) y [JNA](https://github.com/java-native-access/jna) para el llavero del sistema |
+| :simple-git: | Publicar, unir y actualizar (E y M) | [libgit2](https://libgit2.org/) mediante [git2-rs](https://github.com/rust-lang/git2-rs), con [OpenSSL](https://www.openssl.org/) para HTTPS: la tableta hace Git completo sin instalar nada |
+| :simple-github: | Cuenta de GitHub | Inicio de sesión por código de dispositivo de GitHub (*device flow*): MARC nunca ve tu contraseña |
+| :material-format-font: | Tipografías de lectura | [Lexend](https://www.lexend.com/) y [Comic Neue](https://comicneue.com/) (SIL OFL), [Arimo](https://github.com/googlefonts/Arimo) (Apache 2.0) y [DejaVu Sans](https://dejavu-fonts.github.io/) (licencia libre de Bitstream Vera); sus licencias van dentro de la app |
+| :material-account-voice: | Lector de voz (M) | El motor de voz **del sistema** (Android TextToSpeech). MARC no incluye voces: recomienda [SherpaTTS](https://github.com/woheller69/ttsEngine) (aplicación aparte, de código abierto) para tabletas sin Google |
 
-Todas las librerías de terceros están vendorizadas — nada se carga desde un CDN — para que la wiki funcione completamente sin conexión una vez sincronizada. Todas usan licencias permisivas (MIT, Apache 2.0, BSD, ISC o Zlib); cada compilación del motor de Word verifica las licencias de sus dependencias.
+Todas las librerías de terceros están vendorizadas — nada se carga desde un CDN — para que la wiki funcione completamente sin conexión una vez sincronizada. Casi todas usan licencias permisivas (MIT, Apache 2.0, BSD, ISC o Zlib); las tipografías usan la SIL Open Font License, libgit2 la GPL 2 con excepción de enlace y el JetBrains Runtime la GPL 2 con *Classpath Exception*, que permiten incluirlas en MARC sin cambiar su licencia. Cada compilación del motor de Word verifica las licencias de sus dependencias, y **Ajustes → Acerca de** (E y M) muestra cada licencia completa.
 
 ## Creado por Antonio Baeza
 

@@ -4,6 +4,9 @@ La primera vez que abres MARC no hay nada conectado — verás el [[02 El Hub|Hu
 
 Hay tres formas de conectar una wiki en el escritorio (EN), según dónde viva tu documentación (en tabletas y teléfonos, ver [[08 MARC en tabletas y teléfonos]]):
 
+> [!info] ¿Usas E o M?
+> Las ediciones completas conectan con el botón **+ Conectar** y traen más opciones: tu cuenta de GitHub, elegir dónde clonar, usar un repositorio que ya tenías clonado y crear wikis nuevas. Ve a [[#En E y M]].
+
 | | Cuándo usarla |
 |---|---|
 | **GitHub** | Tu documentación ya vive en un repositorio remoto — de tu equipo, o tuyo — y quieres que MARC la traiga y la mantenga sincronizada sola. |
@@ -72,3 +75,46 @@ Si todo salió bien, ese repositorio queda como **activo** y la app te lleva a s
 Para un repositorio de **GitHub**: a partir de aquí, la app lo mantiene sincronizado sola (al abrir MARC, y en segundo plano mientras navegas la wiki activa) — no tienes que acordarte de nada. Si necesitas forzarlo ya, ve a [[04 Gestionar tus repositorios]].
 
 Para una **carpeta local**: no hay nada que sincronizar — ya estás viendo el contenido real de tu disco, siempre. Ver [[04 Gestionar tus repositorios]] para el detalle de cómo MARC detecta tus cambios.
+
+## En E y M
+
+En **E** (escritorio con ventana propia) y **M** (tableta y teléfono), el botón **+ Conectar** de la barra lateral o del inicio abre una hoja con tres pestañas:
+
+| Pestaña | Para qué |
+|---|---|
+| **Git** | Conectar un repositorio: de tu lista de GitHub (con tu cuenta) o pegando su URL |
+| **Carpeta local** | Abrir una carpeta con archivos Markdown tal como está (en M, dentro de la carpeta MARC o la que elijas) |
+| **Crear** | Crear una wiki nueva: **en GitHub** (pública o privada) o **local** |
+
+Los archivos `.marc` se abren con **doble clic** (E) o **Abrir con MARC** desde el gestor de archivos (M). Ver [[07 El formato .marc]].
+
+### Git con tu cuenta (recomendado)
+
+En la pestaña **Git**, pulsa *«¿Usas GitHub? Conecta tu cuenta y elige tus repositorios, sin pegar URL ni token»*. Tras iniciar sesión ([[15 Tu cuenta de GitHub]]) verás tu lista de repositorios, públicos y privados, con buscador: elige uno y listo. Se clona con **todo su historial**, listo para [[16 Historial y trabajo en equipo|Historial]] y [[18 Publicar cambios (Git)|Publicar]].
+
+> [!tip] Repositorios de tu organización
+> Si faltan los de tu escuela o empresa, usa el enlace del final de la lista: *«¿Faltan repositorios de tu organización? Su administrador debe aprobar la app MARC: pide acceso aquí»*.
+
+### Git con URL
+
+También puedes pegar la URL (`https://…`) de cualquier servidor Git (GitHub, GitLab, un servidor propio), elegir la **Rama (opcional · main)** y, si es privado y no usas tu cuenta, un **Token (opcional · repos privados)**. El token se guarda cifrado en el llavero del sistema.
+
+### Dónde guardarlo (E)
+
+En el escritorio, **Dónde guardarlo** muestra la carpeta donde se clonará (por defecto una carpeta de MARC). Pulsa **Cambiar…** para elegir otra, por ejemplo tu carpeta de proyectos. Al quitar la wiki, una carpeta elegida por ti **nunca se borra**.
+
+### ¿Ya lo tienes clonado? (E)
+
+Si ya tienes el repositorio en tu equipo (clonado con Git, VS Code u otra herramienta), pulsa **¿Ya lo tienes clonado? Elegir su carpeta…**. MARC lo usa **en su sitio**, sin copiarlo: verás su historial, podrás publicar y actualizar, y tus otras herramientas siguen usando la misma carpeta.
+
+### Crear una wiki
+
+En **Crear**, escribe el nombre y elige:
+
+- **GitHub**: MARC crea el repositorio en tu cuenta (marca si es **privado**), con una primera página, y lo conecta.
+- **Local**: una carpeta nueva en tu equipo (en M, dentro de la carpeta MARC).
+
+Después, añade páginas con **Nueva página** en la barra lateral y escribe con el [[17 Editar sobre la página|editor visual]].
+
+> [!note] Para probarlo
+> El paso 5 de [[22 Practica las funciones]] crea una wiki de práctica en GitHub.

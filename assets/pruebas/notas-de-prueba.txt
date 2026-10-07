@@ -1,0 +1,5 @@
+Notas de prueba del visor de MARC
+
+Este es un archivo de texto plano. Si lo estás leyendo en una ventana aparte,
+el visor funciona: puedes moverla, cambiarla de tamaño o pasarla a pantalla
+dividida con los controles de tu sistema, y volver a MARC sin perder tu página.

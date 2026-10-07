@@ -2,6 +2,9 @@
 
 El panel de **Repositorios** (accesible desde el selector de repositorio en la barra superior de cualquier wiki, o desde el Hub) es donde administras todo lo relacionado con tus repositorios conectados: cuáles tienes, cuál está activo, y cómo mantenerlos al día.
 
+> [!info] Esta página describe EN
+> En **E** y **M** se gestiona desde las fichas de la barra lateral y **Ajustes → Wikis**: ve a [[#En E y M]] al final.
+
 ## Conectar otro repositorio
 
 El mismo formulario que usaste la primera vez — con sus dos pestañas, **GitHub** y **Carpeta local**, ver [[01 Conectar tu primer repositorio]] — está siempre disponible aquí, debajo de tu lista de repositorios. Puedes tener **varios repositorios conectados** al mismo tiempo, mezclando ambos tipos libremente; solo uno está activo (siendo servido) en un momento dado.
@@ -47,3 +50,18 @@ Cada fila muestra una píldora de estado:
 
 - **✓ activo** — es el que se está sirviendo ahora mismo.
 - **desactivado** — está conectado y disponible, pero no es el que ves en este momento.
+
+## En E y M
+
+| Acción | Cómo |
+|---|---|
+| **Actualizar** una wiki con Git | **↻ actualizar** en su ficha o en su menú: trae lo que publicó el equipo con Git de verdad, sin perder tus borradores ([[18 Publicar cambios (Git)]]) |
+| Actualizar una carpeta | No hace falta: MARC vigila la carpeta y redibuja la página en cuanto cambia un archivo |
+| **Publicar** tus cambios | **Publicar · N** en la barra de la página ([[18 Publicar cambios (Git)]]) |
+| Ver todas tus wikis | **Ajustes → Wikis** (o *Tus wikis* en el inicio) |
+| **Quitar** una wiki | **Ajustes → Wikis → Quitar del espacio de trabajo**. En **M** también puedes **mantener pulsada** su ficha en la barra lateral o su tarjeta en *Tus wikis* |
+
+Igual que en EN, quitar **nunca borra** una carpeta elegida por ti ni un repositorio que ya tenías clonado; solo borra la copia que MARC hizo en su propia carpeta. El repositorio en GitHub nunca se toca.
+
+> [!tip] Dos wikis con el mismo nombre
+> Si conectas dos wikis que se llaman igual (por ejemplo dos `docs`), cada ficha muestra de dónde viene (cuenta, carpeta) para distinguirlas.
