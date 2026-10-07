@@ -8,7 +8,7 @@ title: Portada
 
 ### Markdown Automatizado por Repo y Consulta
 
-`EN2.0.0` · `E2.0.0` · `M2.3.1`
+`EN2.0.0` · `E2.0.0` · `M2.3.2`
 
 ---
 

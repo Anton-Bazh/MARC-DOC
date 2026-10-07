@@ -4,7 +4,7 @@
 
 **MARC** — *Markdown Automatizado por Repo y Consulta* — nació con otro nombre de trabajo, **Wiki Desktop Client**, mientras la idea todavía se estaba probando: leer la documentación técnica de un equipo directo desde su repositorio de Git, sin nube, sin plataforma, sin fricción. El nombre cambió; la idea y la arquitectura descentralizada detrás — ver [[00 Portada|Portada]] — se mantienen igual desde el primer commit. Nació **ligero**, para consultar tus wikis sin tener una aplicación pesada abierta: esa edición sigue viva como **EN**. Con la **generación 2** MARC se convirtió en una familia de ediciones —EN (escritorio en navegador), E (escritorio con ventana propia) y M (móvil)— con formato portable, exportación a PDF y Word, asistente de IA y, en E y M, edición visual, Git completo, trabajo en equipo y lectura accesible.
 
-`EN2.0.0` · `E2.0.0` · `M2.3.1` — ver [[10 Ediciones y versiones]] y [[14 Novedades]]
+`EN2.0.0` · `E2.0.0` · `M2.3.2` — ver [[10 Ediciones y versiones]] y [[14 Novedades]]
 
 ## Arquitectura, a grandes rasgos
 

@@ -22,10 +22,11 @@ La edición **E** ya está disponible: la interfaz completa de MARC en su propia
 | **Abrir con MARC** | Doble clic en un `.marc` o un `.md` lo abre en MARC; una sola ventana | [[03 Navegar la wiki]] |
 | Panel derecho ajustable | Arrastra su borde para ensancharlo (hasta el doble) | [[03 Navegar la wiki]] |
 
-## M2.3.1 · tabletas y teléfonos
+## M2.3.2 · tabletas y teléfonos
 
 | Versión | Qué trae | Página |
 |---|---|---|
+| **M2.3.2** | El visor se abre de verdad en **ventana flotante** o en **pantalla dividida** (antes, en algunas tabletas como las Huawei, se abría a pantalla completa) | [[21 Visor de archivos]] |
 | **M2.3.1** | Un enlace a un `.marc` abre esa wiki desde una copia (así se abre la wiki de práctica de esta documentación) | [[22 Practica las funciones]] |
 | **M2.3.0** | **Visor de archivos** en ventana flotante o pantalla dividida (PDF en la página exacta, textos) | [[21 Visor de archivos]] |
 | **M2.2.0** | **Git en la tableta**: Publicar cambios, ↻ actualizar sin bloquearse, historial completo, repositorios privados con tu cuenta | [[18 Publicar cambios (Git)]] |

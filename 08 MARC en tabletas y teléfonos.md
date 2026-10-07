@@ -96,7 +96,7 @@ En el inicio, **mantén pulsada** su tarjeta y confirma. El mensaje te dice exac
 
 **Ajustes** tiene cinco pestañas: **Apariencia** (tema, color de acento, tamaño del texto y [[21 Visor de archivos|visor de archivos]]), **Accesibilidad** ([[20 Lectura cómoda y accesibilidad]]), **IA** (ver [[09 Asistente IA]]), **Wikis** (origen de cada wiki, actualizar, exportar, quitar, carpeta MARC) y **Acerca de** (versión `M`).
 
-## Lo nuevo en la tableta (M2.1.0 a M2.3.1)
+## Lo nuevo en la tableta (M2.1.0 a M2.3.2)
 
 | Función | Dónde | Página |
 |---|---|---|

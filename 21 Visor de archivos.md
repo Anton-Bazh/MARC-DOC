@@ -32,6 +32,12 @@ MARC funciona desde **Android 8**. La pantalla dividida existe en todas las tabl
 | **Ventana flotante** | Siempre flotante |
 | **Pantalla dividida** | Siempre al lado de MARC |
 
+En **pantalla dividida**, el visor se abre a un lado y MARC se acomoda al otro; arrastra la barra central para repartir el espacio, o hasta un borde para cerrar uno de los dos. En la **ventana flotante**, la barra superior de la ventana permite moverla, maximizarla o cerrarla.
+
+![Visor en ventana flotante](assets/capturas/movil/visor-flotante.png)
+
+![Visor en pantalla dividida](assets/capturas/movil/visor-dividida.png)
+
 Si tu tableta no tiene ventanas flotantes, el ajuste solo dice *"Este dispositivo no tiene ventanas flotantes: el visor se abre en pantalla dividida."* La ventana del visor se mueve, se agranda y se cierra con los controles del propio sistema.
 
 ## Escribir enlaces a archivos

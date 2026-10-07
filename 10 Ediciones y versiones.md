@@ -8,7 +8,7 @@ MARC tiene **tres ediciones**. Todas leen las mismas wikis, comparten el formato
 | Dónde corre | Windows y Linux | Windows y Linux | Android 8 o superior |
 | Pensada para | Leer y consultar **ligero**, sin tener una aplicación pesada abierta | Trabajar a fondo con tus wikis en el escritorio | Llevarte tus wikis, leerlas sin conexión, editarlas y consultarlas con IA |
 | Funciones nuevas | Las recibe **después**, y solo las que encajan con su idea de ligereza | **Primero** | **Primero** |
-| Estado | Disponible: `EN2.0.0` | Disponible: `E2.0.0` | Disponible: `M2.3.1` |
+| Estado | Disponible: `EN2.0.0` | Disponible: `E2.0.0` | Disponible: `M2.3.2` |
 
 ```mermaid
 flowchart TB
@@ -60,20 +60,20 @@ Cada versión lleva la **letra de su edición** seguida de su número:
 |---|---|
 | EN | `EN2.0.0` |
 | E | `E2.0.0` |
-| M | `M2.3.1` |
+| M | `M2.3.2` |
 
 El número tiene tres partes: **mayor . menor . parche**.
 
 - **Mayor:** es **el mismo en todas las ediciones**: marca la generación de MARC y cambia en todas a la vez.
 - **Menor y parche:** son propios de cada edición, porque cada una recibe sus propias mejoras y correcciones.
 
-Por ejemplo, `M2.3.1` y `EN2.0.7` son de la misma generación (la 2): M ya recibió más funciones, como corresponde a una edición completa.
+Por ejemplo, `M2.3.2` y `EN2.0.7` son de la misma generación (la 2): M ya recibió más funciones, como corresponde a una edición completa.
 
 ```mermaid
 flowchart LR
     G1["Generación 1<br/>v1.x · solo escritorio en navegador"] --> G2["Generación 2"]
     G2 --> EN2["EN2.0.0 → EN2.0.1 → …"]
-    G2 --> M2["M2.0.0 → M2.1.0 → M2.2.0 → M2.3.1 → …"]
+    G2 --> M2["M2.0.0 → M2.1.0 → M2.2.0 → M2.3.2 → …"]
     G2 --> E2["E2.0.0 → …"]
 ```
 
