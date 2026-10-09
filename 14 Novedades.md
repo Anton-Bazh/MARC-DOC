@@ -5,10 +5,12 @@ Qué trae cada versión de MARC y dónde aprender a usarlo. Las funciones nuevas
 > [!tip] Prueba todo lo nuevo
 > Abre la [[22 Practica las funciones|wiki de práctica]]: es editable y trae un PDF de prueba, así que puedes probar cada función sin tocar tus wikis.
 
-## E2.2.1 · escritorio con ventana propia
+## E2.2.3 · escritorio con ventana propia
 
 | Versión | Qué trae | Página |
 |---|---|---|
+| **E2.2.3** | La portada de los PDF que exportas lleva la abeja | [[06 Exportar PDF, Word y .marc]] |
+| **E2.2.2** | Iconos de la aplicación y de los archivos `.marc` nítidos a cualquier tamaño | [[00 Portada]] |
 | **E2.2.1** | La nueva imagen de MARC: **la abeja** (Margaret), como icono de la aplicación, de los archivos `.marc` y dentro de la app | [[00 Portada]] |
 | **E2.2.0** | El asistente **conoce MARC**: escribe usando diagramas, tablas, avisos y demás recursos; **copiar** y **↻ reintentar** bajo las respuestas; puede proponer cambios desde el primer momento (lo apagas en el pie del chat); también coloca imágenes junto a un documento abierto con «Abrir con» | [[09 Asistente IA]] |
 | **E2.1.0** | El asistente **ve imágenes**: adjúntalas con el clip o arrástralas a la conversación, y puede guardarlas en la wiki o mover las que ya tienes. **Dictado**: habla en vez de escribir, sin conexión. ↻ actualizar une tus cambios con los del servidor | [[09 Asistente IA]] |
@@ -30,10 +32,12 @@ La edición **E** ya está disponible: la interfaz completa de MARC en su propia
 | **Abrir con MARC** | Doble clic en un `.marc` o un `.md` lo abre en MARC; una sola ventana | [[03 Navegar la wiki]] |
 | Panel derecho ajustable | Arrastra su borde para ensancharlo (hasta el doble) | [[03 Navegar la wiki]] |
 
-## M2.7.1 · tabletas y teléfonos
+## M2.7.3 · tabletas y teléfonos
 
 | Versión | Qué trae | Página |
 |---|---|---|
+| **M2.7.3** | La portada de los PDF que exportas lleva la abeja | [[06 Exportar PDF, Word y .marc]] |
+| **M2.7.2** | Icono del lanzador y logo de la aplicación más grandes y nítidos | [[00 Portada]] |
 | **M2.7.1** | La nueva imagen de MARC: **la abeja** (Margaret), en el icono de la aplicación y dentro de la app | [[00 Portada]] |
 | **M2.7.0** | **Historial completo en la tableta**: Comparar, Autoría y Equipo; botón **Nueva página** en el índice; los cambios se guardan bien en wikis creadas en la tableta | [[16 Historial y trabajo en equipo]] |
 | **M2.6.0** | El asistente **conoce MARC**, **copiar** y **↻ reintentar** bajo las respuestas, y puede proponer cambios desde el primer momento | [[09 Asistente IA]] |

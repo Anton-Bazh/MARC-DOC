@@ -8,7 +8,7 @@ MARC tiene **tres ediciones**. Todas leen las mismas wikis, comparten el formato
 | Dónde corre | Windows y Linux | Windows y Linux | Android 8 o superior |
 | Pensada para | Leer y consultar **ligero**, sin tener una aplicación pesada abierta | Trabajar a fondo con tus wikis en el escritorio | Llevarte tus wikis, leerlas sin conexión, editarlas y consultarlas con IA |
 | Funciones nuevas | Se mantiene como está | **Sí** | **Sí** |
-| Estado | Disponible: `EN2.0.1` | Disponible: `E2.2.1` | Disponible: `M2.7.1` |
+| Estado | Disponible: `EN2.0.1` | Disponible: `E2.2.3` | Disponible: `M2.7.3` |
 
 ```mermaid
 flowchart TB
@@ -34,7 +34,7 @@ Por esa misma idea, EN se mantiene como está: las funciones nuevas llegan a E y
 
 **E** lleva al escritorio la misma interfaz de MARC móvil, en su propia ventana: barra lateral, lector, búsqueda, edición visual, publicar con Git, historial y trabajo en equipo, notas, lectura cómoda, visor de archivos, asistente de IA y exportación. Junto con M es una edición **completa**: las funciones y actualizaciones llegan **primero** a ellas.
 
-E es una versión **estable** (`E2.2.1`). Abre los `.marc` y `.md` con doble clic y mantiene **una sola ventana**: si ya está abierta, el archivo se abre en ella. En Linux se instala con su propio paquete; para Windows, E y EN tendrán cada una su instalador. Todo lo que trae está en [[14 Novedades]].
+E es una versión **estable** (`E2.2.3`). Abre los `.marc` y `.md` con doble clic y mantiene **una sola ventana**: si ya está abierta, el archivo se abre en ella. En Linux se instala con su propio paquete; para Windows, E y EN tendrán cada una su instalador. Todo lo que trae está en [[14 Novedades]].
 
 ### M — el móvil
 
@@ -58,22 +58,22 @@ Cada versión lleva la **letra de su edición** seguida de su número:
 | Edición | Ejemplo |
 |---|---|
 | EN | `EN2.0.1` |
-| E | `E2.2.1` |
-| M | `M2.7.1` |
+| E | `E2.2.3` |
+| M | `M2.7.3` |
 
 El número tiene tres partes: **mayor . menor . parche**.
 
 - **Mayor:** es **el mismo en todas las ediciones**: marca la generación de MARC y cambia en todas a la vez.
 - **Menor y parche:** son propios de cada edición, porque cada una recibe sus propias mejoras y correcciones.
 
-Por ejemplo, `M2.7.1` y `EN2.0.1` son de la misma generación (la 2): M ya recibió más funciones, como corresponde a una edición completa.
+Por ejemplo, `M2.7.3` y `EN2.0.1` son de la misma generación (la 2): M ya recibió más funciones, como corresponde a una edición completa.
 
 ```mermaid
 flowchart LR
     G1["Generación 1<br/>v1.x · solo escritorio en navegador"] --> G2["Generación 2"]
     G2 --> EN2["EN2.0.0 → EN2.0.1 → …"]
-    G2 --> M2["M2.0.0 → … → M2.3.2 → M2.4.0 → … → M2.7.1 → …"]
-    G2 --> E2["E2.0.0 → E2.1.0 → E2.2.0 → E2.2.1 → …"]
+    G2 --> M2["M2.0.0 → … → M2.3.2 → M2.4.0 → … → M2.7.3 → …"]
+    G2 --> E2["E2.0.0 → E2.1.0 → E2.2.0 → … → E2.2.3 → …"]
 ```
 
 ### Por qué estamos en la 2
