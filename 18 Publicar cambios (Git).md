@@ -16,6 +16,8 @@ Cuando guardas en una wiki con Git, en la barra aparece **Publicar · N**, donde
 
 ![Publicar cambios](assets/capturas/e/publicar.png)
 
+![Publicar cambios en la tableta](assets/capturas/movil/publicar.png)
+
 | Mensaje | Qué pasó |
 |---|---|
 | **publicado y subido (hash)** | El commit ya está en el servidor |

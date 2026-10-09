@@ -30,6 +30,8 @@ Toca **+** en la barra lateral o **+ Conectar** en el inicio (pestañas **Git**,
 | **Carpeta local** | Hace una copia de lectura en `MARC/Wikis`. Si la carpeta ya está **dentro** de `MARC/Wikis`, la usa tal cual, sin copiarla |
 | **Archivo .marc** | Lo abre y lo extrae en `MARC/Wikis`. Ver [[07 El formato .marc]] |
 
+![Selector de carpetas de Android al conectar una carpeta local](assets/capturas/movil/carpeta-local.png)
+
 ### Abrir con MARC
 
 Desde cualquier gestor de archivos, toca un archivo y elige **Abrir con → MARC**:
@@ -80,6 +82,8 @@ El lápiz de la barra lateral abre el editor de la página, en modo **Visual** (
 
 Antes de cada guardado, la versión anterior queda en `MARC/Respaldos`.
 
+![Editar en la tableta, modo Visual](assets/capturas/movil/editar-visual.png)
+
 ## Exportar
 
 **Descargar** (arriba a la derecha de cada página) ofrece PDF de esta página o de la wiki completa, **Word** y **Formato portable** (`.marc`). Ver [[06 Exportar PDF, Word y .marc]].
@@ -95,6 +99,8 @@ En el inicio, **mantén pulsada** su tarjeta y confirma. El mensaje te dice exac
 ## Ajustes
 
 **Ajustes** tiene cinco pestañas: **Apariencia** (tema, color de acento, tamaño del texto y [[21 Visor de archivos|visor de archivos]]), **Accesibilidad** ([[20 Lectura cómoda y accesibilidad]]), **IA** (ver [[09 Asistente IA]]), **Wikis** (origen de cada wiki, actualizar, exportar, quitar, carpeta MARC) y **Acerca de** (versión `M`).
+
+![Ajustes de la tableta, pestaña Apariencia](assets/capturas/movil/ajustes.png)
 
 ## Lo nuevo en la tableta (M2.1.0 a M2.3.2)
 

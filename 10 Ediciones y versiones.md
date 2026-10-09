@@ -87,6 +87,8 @@ La generación 1 (`v1.x`) era solo el escritorio en navegador. La **generación 
 
 ![Acerca de MARC en E, con la versión bajo el nombre](assets/capturas/e/acerca.png)
 
+![Acerca de MARC en la tableta](assets/capturas/movil/acerca.png)
+
 Qué trajo cada versión: [[14 Novedades]].
 
 > [!info] El formato .marc tiene su propia versión

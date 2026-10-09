@@ -25,6 +25,14 @@ En el **panel derecho** (botón del panel, arriba a la derecha) elige **Historia
 
 ![Ver autoría: cada parte de la página con su autor](assets/capturas/e/autoria.png)
 
+En la tableta:
+
+![Historial en la tableta](assets/capturas/movil/historial.png)
+
+![Comparar versiones en la tableta: lo añadido, resaltado](assets/capturas/movil/comparar.png)
+
+![Ver autoría en la tableta](assets/capturas/movil/autoria.png)
+
 ## Cambió desde tu última lectura
 
 Si **otra persona** cambió una página desde la última vez que la leíste, verás:
@@ -43,6 +51,8 @@ Tus propios cambios **no** activan el aviso.
 - La **barra de estado** (abajo, E) muestra la rama, el último commit, su autor y cuándo.
 
 ![Equipo de esta wiki: actividad de los últimos meses y personas](assets/capturas/e/equipo.png)
+
+![Equipo de esta wiki en la tableta](assets/capturas/movil/equipo.png)
 
 ## En tiempo real
 

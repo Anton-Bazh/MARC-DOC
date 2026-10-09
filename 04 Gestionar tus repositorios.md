@@ -63,6 +63,10 @@ Cada fila muestra una píldora de estado:
 
 ![Ajustes → Wikis en E: cada wiki con su origen, Actualizar, .marc y Quitar](assets/capturas/e/ajustes-wikis.png)
 
+![Ajustes → Wikis en la tableta, con la carpeta MARC](assets/capturas/movil/ajustes-wikis.png)
+
+![Confirmación al quitar una wiki en la tableta: dice qué se borra y qué no](assets/capturas/movil/quitar-wiki.png)
+
 Igual que en EN, quitar **nunca borra** una carpeta elegida por ti ni un repositorio que ya tenías clonado; solo borra la copia que MARC hizo en su propia carpeta. El repositorio en GitHub nunca se toca.
 
 > [!tip] Dos wikis con el mismo nombre

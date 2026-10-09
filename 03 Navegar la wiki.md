@@ -73,6 +73,8 @@ Al seleccionar texto aparece una barra con **Copiar**, **Todo** (toda la página
 
 ![Barra de selección con Copiar, Todo, Explicar, Resumir y Preguntar](assets/capturas/e/seleccionar.png)
 
+![Barra de selección en la tableta, con los tiradores para ampliar la selección](assets/capturas/movil/seleccionar.png)
+
 ### Abrir con MARC y una sola ventana (E)
 
 Haz **doble clic** en un `.marc` (o elige *Abrir con → MARC* en un `.md`): se abre en MARC. Si MARC ya está abierta, el archivo llega a **la misma ventana**; no se abren copias. Un `.md` se abre como documento para leerlo.

@@ -88,6 +88,8 @@ En **E** (escritorio con ventana propia) y **M** (tableta y teléfono), el botó
 
 ![Hoja Conectar repositorio en E, pestaña Git](assets/capturas/e/conectar.png)
 
+![Hoja Conectar en la tableta, pestaña Carpeta local](assets/capturas/movil/conectar.png)
+
 Los archivos `.marc` se abren con **doble clic** (E) o **Abrir con MARC** desde el gestor de archivos (M). Ver [[07 El formato .marc]].
 
 ### Git con tu cuenta (recomendado)
@@ -121,6 +123,8 @@ En **Crear**, escribe el nombre y elige:
 - **Local**: una carpeta nueva en tu equipo (en M, dentro de la carpeta MARC).
 
 ![Crear una wiki: nombre, descripción y dónde crearla](assets/capturas/e/crear-wiki.png)
+
+![Crear una wiki en la tableta: en GitHub (privada o pública) o en este equipo](assets/capturas/movil/crear-wiki.png)
 
 Después, añade páginas con **Nueva página** en la barra lateral y escribe con el [[17 Editar sobre la página|editor visual]].
 

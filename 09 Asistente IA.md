@@ -65,11 +65,15 @@ Adjunta imágenes con el **clip** (en el escritorio también puedes **arrastrarl
 
 ![Imagen adjunta y tarjetas Guardar imagen y Mover imagen, con Aplicar todo](assets/capturas/e/asistente-imagenes.png)
 
+![En la tableta: dos imágenes de la galería colocadas por el asistente, con Guardar imagen y Aplicar todo](assets/capturas/movil/asistente-imagenes.png)
+
 ## Dictado
 
 Toca el **micrófono** y habla: el texto queda en el campo para que lo revises antes de enviarlo. En el escritorio funciona **sin conexión** (la primera vez descarga el modelo de voz en español, unos 40 MB); en la tableta usa el reconocedor de voz del dispositivo.
 
 ![Dictado en curso: el campo dice «escuchando…»](assets/capturas/e/asistente-dictado.png)
+
+![Dictado en la tableta con el reconocedor de voz del dispositivo](assets/capturas/movil/dictado.png)
 
 ## Copiar y reintentar
 

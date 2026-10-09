@@ -18,6 +18,8 @@ En la barra de la página, **«Aa»** abre lo más usado sin salir de la lectura
 
 ## Ajustes → Accesibilidad
 
+![Ajustes → Accesibilidad en la tableta](assets/capturas/movil/ajustes-accesibilidad.png)
+
 ### Lectura
 
 | Ajuste | Opciones |
@@ -42,12 +44,18 @@ En la barra de la página, **«Aa»** abre lo más usado sin salir de la lectura
 
 Filtro cálido sobre **toda** MARC (no solo la página), con **Intensidad**. **Encender solo de noche** la enciende y apaga sola en el horario que elijas (**Desde** / **Hasta**).
 
+![Luz de noche activa](assets/capturas/movil/luz-noche.png)
+
 ### Ayudas de lectura
 
 | Ayuda | Qué hace |
 |---|---|
 | **Énfasis de lectura** | Pone en negrita el **inicio de cada palabra** para guiar la vista |
 | **Regla de lectura** | *"Resalta una franja y atenúa el resto; muévela con su asa."* Arrastra el asa de la derecha para seguir la línea |
+
+![Énfasis de lectura](assets/capturas/movil/enfasis.png)
+
+![Regla de lectura con su asa a la derecha](assets/capturas/movil/regla.png)
 
 ## Lector de voz (M)
 
@@ -112,6 +120,8 @@ Aplicación gratuita de F-Droid: ábrela una vez, descarga la voz de tu idioma y
 ## Copiar y Todo (M)
 
 Al **mantener pulsado** un texto de la página aparece la barra de selección con **Copiar** y **Todo** (seleccionar toda la página), además de las acciones de MARC (preguntar al asistente, etc.).
+
+![Barra de selección con Copiar y Todo](assets/capturas/movil/seleccionar.png)
 
 > [!note] Para probarlo
 > Página **03 Lectura cómoda** de la [[22 Practica las funciones|wiki de práctica]]: tiene párrafos largos, cursivas y frases pensadas para probar cada ajuste y la voz.

@@ -23,6 +23,10 @@ Arriba aparecen dos pestañas:
 
 ![Modo Markdown: el texto fuente completo](assets/capturas/e/editar-markdown.png)
 
+![Modo Visual en la tableta, con Guardar y Descartar abajo](assets/capturas/movil/editar-visual.png)
+
+![Modo Markdown en la tableta](assets/capturas/movil/editar-markdown.png)
+
 Puedes pasar de una a otra sin perder lo escrito. De **Markdown** a **Visual** solo se vuelve después de **Guardar** o **Descartar** (MARC lo avisa: *"guarda o descarta los cambios de Markdown para volver a Visual"*), porque la página dibujada es la guardada.
 
 ## Negrita y cursiva

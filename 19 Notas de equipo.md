@@ -22,6 +22,10 @@ Las notas de un párrafo muestran una marca en el margen; al pulsarla se abre la
 
 ![Notas de equipo](assets/capturas/e/notas.png)
 
+![En la tableta: al tocar un párrafo aparece el «+» en el margen](assets/capturas/movil/comentar-mas.png)
+
+![Nota sobre un párrafo en la tableta: el panel indica «Sobre: …»](assets/capturas/movil/comentar-parrafo.png)
+
 ## Conversar, resolver y reabrir
 
 | Acción | Cómo | Queda en el historial |

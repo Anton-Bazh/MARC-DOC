@@ -13,6 +13,8 @@ Pulsa cualquier tarjeta para abrir esa wiki. Si no era la activa, la app la sinc
 
 ![Hub de E con tres wikis conectadas y la actividad del equipo](assets/capturas/e/hub.png)
 
+![Inicio de la tableta con dos wikis y las páginas recientes](assets/capturas/movil/hub.png)
+
 ## Buscador del Hub
 
 La caja de búsqueda del Hub no solo filtra por el nombre del repositorio — también busca dentro de los **títulos de todas sus páginas**. Así, si escribes "arquitectura" y ningún repositorio se llama así, pero uno de ellos tiene una página titulada "Arquitectura del sistema", esa tarjeta va a aparecer igual.
