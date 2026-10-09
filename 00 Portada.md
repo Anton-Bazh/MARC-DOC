@@ -2,7 +2,7 @@
 title: Portada
 ---
 
-![MARC](assets/logo.png){ width="120" }
+![MARC — Margaret, la abeja de MARC](assets/logo.png){ width="140" }
 
 # MARC
 
