@@ -61,6 +61,8 @@ Cada fila muestra una píldora de estado:
 | Ver todas tus wikis | **Ajustes → Wikis** (o *Tus wikis* en el inicio) |
 | **Quitar** una wiki | **Ajustes → Wikis → Quitar del espacio de trabajo**. En **M** también puedes **mantener pulsada** su ficha en la barra lateral o su tarjeta en *Tus wikis* |
 
+![Ajustes → Wikis en E: cada wiki con su origen, Actualizar, .marc y Quitar](assets/capturas/e/ajustes-wikis.png)
+
 Igual que en EN, quitar **nunca borra** una carpeta elegida por ti ni un repositorio que ya tenías clonado; solo borra la copia que MARC hizo en su propia carpeta. El repositorio en GitHub nunca se toca.
 
 > [!tip] Dos wikis con el mismo nombre

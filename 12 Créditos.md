@@ -6,6 +6,10 @@
 
 `EN2.0.1` · `E2.2.3` · `M2.7.3` — ver [[10 Ediciones y versiones]] y [[14 Novedades]]
 
+Los avisos legales de todo el software de terceros están en **Acerca de** (Ajustes → Acerca de en E y M); cada uno abre su licencia completa.
+
+![Acerca de MARC con los avisos legales](assets/capturas/e/acerca-licencias.png)
+
 ## Arquitectura, a grandes rasgos
 
 MARC corre **100% en tu equipo o tableta**: no hay ningún servidor de MARC en internet al que tu documentación viaje. En el escritorio, un proceso local lee tu repositorio, carpeta o `.marc` y te sirve la wiki en tu propio navegador. En el móvil y en el escritorio con ventana propia (E), una aplicación nativa hace lo mismo con el **núcleo** de MARC (compartido por las dos), y comparte con EN el formato `.marc` y los motores de PDF y Word.

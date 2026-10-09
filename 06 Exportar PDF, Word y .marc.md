@@ -8,6 +8,10 @@ MARC puede entregar cualquier wiki conectada en tres formatos. Todo se genera **
 | **Word (.docx)** | Entregar un documento que otra persona pueda **editar** en Word, WPS, LibreOffice o Google Docs | Más opciones → **Descargar Word** | Descargar → **Word** |
 | **.marc** | Pasar la wiki completa a otra persona o dispositivo en un solo archivo, para abrirla en MARC | Más opciones → **Exportar .marc** | Descargar → **Formato portable** |
 
+En **E**, todo está en el botón **↓ Descargar** de la barra de la página:
+
+![Menú Descargar de E: esta página, wiki completa, Word y formato portable](assets/capturas/e/menu-descargar.png)
+
 ## PDF
 
 El PDF incluye una **portada** con el nombre de la wiki y sus cifras (páginas, diagramas, gráficas, fórmulas), un **índice** clicable, cada página de la wiki en hoja nueva con su título en la cabecera, y el número de página al pie.
@@ -28,6 +32,8 @@ Al descargar, MARC te pregunta **cómo quieres las gráficas y fórmulas**:
 | Gráficas | Imagen, igual que en la wiki | **Gráficas de Word**: barras, columnas, líneas, área, pastel, dona, radar, dispersión, burbujas y combinadas. Sus datos se editan en Excel |
 | Fórmulas | Imagen nítida | **Ecuaciones de Word**, editables con su editor de ecuaciones |
 | Se ve igual en | Word, WPS, LibreOffice y Google Docs | Word y LibreOffice (Google Docs y WPS también las abren) |
+
+![Descargar en Word: qué descargar y cómo van las gráficas y fórmulas](assets/capturas/e/opciones-word.png)
 
 Tablas, listas, texto, bloques de código y avisos son **editables en los dos modos**. MARC recuerda tu elección para la próxima vez.
 

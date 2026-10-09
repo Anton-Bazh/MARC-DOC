@@ -30,6 +30,10 @@ sequenceDiagram
 2. Pega el código, inicia sesión en GitHub si hace falta y pulsa **Authorize MARC**.
 3. Vuelve a MARC: ya aparecen tu nombre, tu foto y tus repositorios.
 
+![Código de inicio de sesión de GitHub en E](assets/capturas/e/cuenta-codigo.png)
+
+![Cuenta conectada: nombre, cuenta y lista de repositorios](assets/capturas/e/cuenta-repos.png)
+
 > [!tip] Si ya usas `gh`
 > En el escritorio, si tienes la herramienta `gh` de GitHub con sesión iniciada, MARC ofrece **entrar con un clic** usando esa sesión.
 

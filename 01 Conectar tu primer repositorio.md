@@ -86,11 +86,15 @@ En **E** (escritorio con ventana propia) y **M** (tableta y teléfono), el botó
 | **Carpeta local** | Abrir una carpeta con archivos Markdown tal como está (en M, dentro de la carpeta MARC o la que elijas) |
 | **Crear** | Crear una wiki nueva: **en GitHub** (pública o privada) o **local** |
 
+![Hoja Conectar repositorio en E, pestaña Git](assets/capturas/e/conectar.png)
+
 Los archivos `.marc` se abren con **doble clic** (E) o **Abrir con MARC** desde el gestor de archivos (M). Ver [[07 El formato .marc]].
 
 ### Git con tu cuenta (recomendado)
 
 En la pestaña **Git**, pulsa *«¿Usas GitHub? Conecta tu cuenta y elige tus repositorios, sin pegar URL ni token»*. Tras iniciar sesión ([[15 Tu cuenta de GitHub]]) verás tu lista de repositorios, públicos y privados, con buscador: elige uno y listo. Se clona con **todo su historial**, listo para [[16 Historial y trabajo en equipo|Historial]] y [[18 Publicar cambios (Git)|Publicar]].
+
+![Lista de tus repositorios de GitHub, con buscador y botón Conectar](assets/capturas/e/cuenta-repos.png)
 
 > [!tip] Repositorios de tu organización
 > Si faltan los de tu escuela o empresa, usa el enlace del final de la lista: *«¿Faltan repositorios de tu organización? Su administrador debe aprobar la app MARC: pide acceso aquí»*.
@@ -103,6 +107,8 @@ También puedes pegar la URL (`https://…`) de cualquier servidor Git (GitHub, 
 
 En el escritorio, **Dónde guardarlo** muestra la carpeta donde se clonará (por defecto una carpeta de MARC). Pulsa **Cambiar…** para elegir otra, por ejemplo tu carpeta de proyectos. Al quitar la wiki, una carpeta elegida por ti **nunca se borra**.
 
+![Dónde guardarlo: carpeta propuesta para el clon y enlace «¿Ya lo tienes clonado?»](assets/capturas/e/conectar-donde.png)
+
 ### ¿Ya lo tienes clonado? (E)
 
 Si ya tienes el repositorio en tu equipo (clonado con Git, VS Code u otra herramienta), pulsa **¿Ya lo tienes clonado? Elegir su carpeta…**. MARC lo usa **en su sitio**, sin copiarlo: verás su historial, podrás publicar y actualizar, y tus otras herramientas siguen usando la misma carpeta.
@@ -113,6 +119,8 @@ En **Crear**, escribe el nombre y elige:
 
 - **GitHub**: MARC crea el repositorio en tu cuenta (marca si es **privado**), con una primera página, y lo conecta.
 - **Local**: una carpeta nueva en tu equipo (en M, dentro de la carpeta MARC).
+
+![Crear una wiki: nombre, descripción y dónde crearla](assets/capturas/e/crear-wiki.png)
 
 Después, añade páginas con **Nueva página** en la barra lateral y escribe con el [[17 Editar sobre la página|editor visual]].
 
