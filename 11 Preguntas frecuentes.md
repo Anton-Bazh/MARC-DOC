@@ -97,7 +97,7 @@ Su organización de GitHub debe aprobar la app MARC. Al final de tu lista de rep
 
 ## La voz no suena en mi tableta
 
-Abre **Ajustes → Accesibilidad → Lector de voz → Probar voz** y lee el aviso. Casi siempre falta la voz de tu idioma: en Android con Google instala **Servicios de voz de Google**; en **Huawei** instala **SherpaTTS** y descarga tu idioma. Revisa también el **volumen multimedia**. Ver [[20 Lectura cómoda y accesibilidad#Si no se oye]].
+Abre **Ajustes → Accesibilidad → Lector de voz → Probar voz** y lee el aviso. Casi siempre falta la voz de tu idioma: en Android con Google instala **Servicios de voz de Google**; en **Huawei** descarga el **modelo de voz** de tu idioma en los ajustes del motor de Huawei (ver [[20 Lectura cómoda y accesibilidad#Voz en Huawei|Voz en Huawei]]). Revisa también el **volumen multimedia**. Ver [[20 Lectura cómoda y accesibilidad#Si no se oye]].
 
 ## ¿E tiene lector de voz?
 

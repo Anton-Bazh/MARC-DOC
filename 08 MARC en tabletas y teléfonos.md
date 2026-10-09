@@ -108,7 +108,7 @@ En el inicio, **mantén pulsada** su tarjeta y confirma. El mensaje te dice exac
 | **Visor** de PDF y textos | Toca un enlace a un archivo | [[21 Visor de archivos]] |
 
 > [!warning] Voz en tabletas Huawei
-> Si **Escuchar esta página** no suena, casi siempre falta una voz en tu idioma. En Huawei instala **SherpaTTS** y descarga la voz de tu idioma; en Android con Google, **Servicios de voz de Google**. Guía completa en [[20 Lectura cómoda y accesibilidad#Si no se oye]].
+> Si **Escuchar esta página** no suena, casi siempre falta una voz en tu idioma. En Huawei, descarga el **modelo de voz** de tu idioma en los ajustes del motor de Huawei (pasos en [[20 Lectura cómoda y accesibilidad#Voz en Huawei|Voz en Huawei]]); en Android con Google, instala **Servicios de voz de Google**. Guía completa en [[20 Lectura cómoda y accesibilidad#Si no se oye]].
 
 > [!note] Para probarlo
 > [[22 Practica las funciones]] trae una wiki de práctica editable y un PDF de prueba.
