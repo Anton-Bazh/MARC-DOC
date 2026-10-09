@@ -98,6 +98,8 @@ En la pestaña **Git**, pulsa *«¿Usas GitHub? Conecta tu cuenta y elige tus re
 
 ![Lista de tus repositorios de GitHub, con buscador y botón Conectar](assets/capturas/e/cuenta-repos.png)
 
+![Tus repositorios en la tableta, filtrados con el buscador](assets/capturas/movil/cuenta-repos.png)
+
 > [!tip] Repositorios de tu organización
 > Si faltan los de tu escuela o empresa, usa el enlace del final de la lista: *«¿Faltan repositorios de tu organización? Su administrador debe aprobar la app MARC: pide acceso aquí»*.
 

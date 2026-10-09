@@ -32,6 +32,8 @@ sequenceDiagram
 
 ![Código de inicio de sesión de GitHub en E](assets/capturas/e/cuenta-codigo.png)
 
+![Código de inicio de sesión en la tableta](assets/capturas/movil/cuenta-codigo.png)
+
 ![Cuenta conectada: nombre, cuenta y lista de repositorios](assets/capturas/e/cuenta-repos.png)
 
 > [!tip] Si ya usas `gh`

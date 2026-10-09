@@ -8,6 +8,10 @@
 
 La primera vez, MARC te pide permiso para crear una carpeta **`MARC`** en la raíz de tu almacenamiento. Android lo llama *acceso a todos los archivos*: MARC solo escribe dentro de `MARC` y en los archivos que tú abres para editar; nunca borra ni modifica nada más.
 
+![Primer arranque en la tableta: MARC pide crear su carpeta, con Dar permiso y Ahora no](assets/capturas/movil/permiso-carpeta.png)
+
+![Pantalla de Android «Acceso a todos los archivos» para MARC](assets/capturas/movil/permiso-android.png)
+
 | Carpeta | Qué guarda |
 |---|---|
 | `MARC/Wikis` | Las wikis conectadas: el clon de cada repositorio, cada `.marc` abierto y una **copia** de cada carpeta local (tu carpeta original nunca se mueve) |
