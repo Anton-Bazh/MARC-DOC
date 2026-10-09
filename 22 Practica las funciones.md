@@ -8,6 +8,8 @@ Esta documentación es de **solo lectura**. Para probar todo sin miedo a romper 
 
 MARC la abre como una wiki más, **desde una copia**: lo que edites, comentes o guardes ahí no toca esta documentación ni tus wikis. Si quieres empezar de cero, vuelve a pulsar el enlace.
 
+![Wiki de práctica abierta en E, en su portada](assets/capturas/e/practica.png)
+
 > [!tip] Si la abres fuera de MARC
 > También puedes descargar el archivo `Practica MARC.marc` y abrirlo con doble clic (E) o con **Abrir con MARC** (M).
 

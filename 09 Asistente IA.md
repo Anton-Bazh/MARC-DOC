@@ -34,6 +34,8 @@ El asistente puede **proponer cambios en archivos editables** desde el primer mo
 
 ![Permisos del asistente](assets/capturas/movil/ajustes-ia-permisos.png)
 
+![Cambio propuesto en E: tarjeta con Revisar, Aplicar y Descartar](assets/capturas/e/asistente-cambio.png)
+
 ```mermaid
 sequenceDiagram
     actor T as Tú
@@ -61,13 +63,19 @@ Adjunta imágenes con el **clip** (en el escritorio también puedes **arrastrarl
 - Hace falta un modelo que vea imágenes (por ejemplo `deepseek-flash`); si el tuyo no puede, MARC te lo dice.
 - Solo puede guardar imágenes donde tu wiki es el original (un repositorio, una carpeta o un documento abierto con «Abrir con»); en un `.marc` solo conversa.
 
+![Imagen adjunta y tarjetas Guardar imagen y Mover imagen, con Aplicar todo](assets/capturas/e/asistente-imagenes.png)
+
 ## Dictado
 
 Toca el **micrófono** y habla: el texto queda en el campo para que lo revises antes de enviarlo. En el escritorio funciona **sin conexión** (la primera vez descarga el modelo de voz en español, unos 40 MB); en la tableta usa el reconocedor de voz del dispositivo.
 
+![Dictado en curso: el campo dice «escuchando…»](assets/capturas/e/asistente-dictado.png)
+
 ## Copiar y reintentar
 
 Bajo cada respuesta tienes **copiar**; bajo la última, **↻ reintentar**, que vuelve a hacer la misma pregunta (con sus imágenes) y sustituye la respuesta.
+
+![copiar y reintentar bajo la última respuesta](assets/capturas/e/asistente-acciones.png)
 
 ## Privacidad
 

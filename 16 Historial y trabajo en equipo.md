@@ -34,6 +34,8 @@ Si **otra persona** cambió una página desde la última vez que la leíste, ver
 
 Tus propios cambios **no** activan el aviso.
 
+![Aviso «Esta página cambió desde tu última lectura» con Ver qué cambió y Entendido](assets/capturas/e/aviso-novedad.png)
+
 ## Equipo y actividad
 
 - **Equipo de esta wiki** (desde el Historial): quién trabaja la wiki, su actividad y quién conoce cada parte.

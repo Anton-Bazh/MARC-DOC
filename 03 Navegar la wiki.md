@@ -52,6 +52,8 @@ Las ediciones completas comparten interfaz (en M, adaptada a la pantalla táctil
 | **Panel derecho** | Pestañas **Secciones** (índice de la página), **Historial** ([[16 Historial y trabajo en equipo]]), **Notas** ([[19 Notas de equipo]]) y **Asistente** ([[09 Asistente IA]]) |
 | **Barra de estado** (E) | Rama, último commit, autor y fecha de la wiki con Git |
 
+![E con la barra lateral, la barra de la página, el panel de Secciones y la barra de estado](assets/capturas/e/navegar.png)
+
 ### El panel derecho se ajusta (E)
 
 Arrastra su **borde izquierdo** para ensancharlo: va desde el ancho inicial hasta el doble, y MARC recuerda tu elección.
@@ -68,6 +70,8 @@ Arrastra su **borde izquierdo** para ensancharlo: va desde el ancho inicial hast
 ### Seleccionar texto
 
 Al seleccionar texto aparece una barra con **Copiar**, **Todo** (toda la página) y las acciones del asistente.
+
+![Barra de selección con Copiar, Todo, Explicar, Resumir y Preguntar](assets/capturas/e/seleccionar.png)
 
 ### Abrir con MARC y una sola ventana (E)
 

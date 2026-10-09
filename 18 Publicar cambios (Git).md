@@ -41,6 +41,8 @@ flowchart TD
 - Si cambiaron **partes distintas** (otra página, otro párrafo), MARC **une** los dos trabajos con un commit de unión y publica. No tienes que hacer nada.
 - Si cambiaron **las mismas líneas**, MARC no decide por ti: muestra *"Tus cambios y los del servidor tocan lo mismo en: archivo.md. Tu commit quedó guardado en este equipo."* **Nada se pierde**: tu commit está en tu equipo y el del servidor sigue en el servidor.
 
+![Aviso de choque en la ventana Publicar cambios](assets/capturas/e/choque.png)
+
 > [!warning] Resolver un choque
 > Habla con la otra persona para decidir qué texto queda. Luego, en un equipo de escritorio, abre la carpeta de la wiki con una herramienta de Git (por ejemplo VS Code, GitHub Desktop o `git pull` en una terminal), une los dos textos y súbelo. Después pulsa **↻ actualizar** en MARC. Las **notas de equipo nunca chocan**: cada nota es un archivo distinto.
 

@@ -475,9 +475,15 @@ Escribe el nombre del icono entre dos puntos y se inserta como parte del documen
 
 Sirven para dar contexto visual rápido sin escribir una sola imagen: por ejemplo, para marcar de un vistazo el estado de una sección (:material-check-circle: listo, :material-alert: pendiente de revisión) o para acompañar un título con algo más reconocible que texto plano.
 
+![Página con iconos dentro de una tabla y de un aviso](assets/capturas/e/escribir-iconos-tabla.png)
+
 ## Tablas
 
 Tablas Markdown estándar — como las que ya viste en esta misma página.
+
+La tabla de la página anterior, escrita en Markdown (pestaña **Markdown** del editor):
+
+![Markdown de la tabla con iconos y del aviso](assets/capturas/e/escribir-iconos-fuente.png)
 
 ## Resumen
 
