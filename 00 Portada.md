@@ -94,6 +94,7 @@ En otras palabras: MARC es una capa de lectura y consulta sobre tus archivos, no
 | [[21 Visor de archivos]] | Abrir PDF y textos aparte, en la página exacta |
 | [[22 Practica las funciones]] | Wiki de práctica editable, PDF de prueba y la documentación en PDF |
 | [[23 Firmas a mano]] | Firmar con el dedo, el lápiz o el ratón; la firma queda como SVG en la wiki |
+| [[24 Comunidad y repositorios]] | Dónde descargar MARC para Linux, los formatos abiertos, traducir esta documentación y participar |
 
 > [!tip] ¿Tienes prisa?
 > En el escritorio (EN o E), ve directo a [[01 Conectar tu primer repositorio]]. En una tableta o teléfono (M), a [[08 MARC en tabletas y teléfonos]]. ¿Ya usas MARC? Mira [[14 Novedades]] y prueba todo en la [[22 Practica las funciones|wiki de práctica]]. ¿No sabes cuál edición es la tuya? Ver [[10 Ediciones y versiones]].

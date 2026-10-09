@@ -12,13 +12,7 @@ Los avisos legales de todo el software de terceros están en **Acerca de** (Ajus
 
 ## Comunidad y licencia
 
-| Repositorio | Para qué |
-|---|---|
-| [MARC-DOC](https://github.com/Anton-Bazh/MARC-DOC) | Esta documentación de uso |
-| [MARC-FORMATO](https://github.com/Anton-Bazh/MARC-FORMATO) | Formatos abiertos (`.marc` y, más adelante, `.marcext`): especificación en inglés, implementación de referencia y propuestas de la comunidad |
-| [MARC-DOC-TRADUCCIONES](https://github.com/Anton-Bazh/MARC-DOC-TRADUCCIONES) | Traducciones de esta documentación, hechas por la comunidad |
-
-Esta documentación se publica con licencia [Creative Commons Atribución 4.0](https://creativecommons.org/licenses/by/4.0/deed.es) (CC BY 4.0): puedes copiarla, traducirla y adaptarla citando la fuente. El instalador de Linux de MARC E está en las *Releases* de MARC-FORMATO.
+Esta documentación se publica con licencia [Creative Commons Atribución 4.0](https://creativecommons.org/licenses/by/4.0/deed.es) (CC BY 4.0). Los formatos abiertos, las traducciones y el instalador de Linux están en repositorios públicos: ver [[24 Comunidad y repositorios]].
 
 ## Arquitectura, a grandes rasgos
 
