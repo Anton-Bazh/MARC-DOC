@@ -4,6 +4,9 @@
 
 Esta es la especificación oficial del formato `.marc`. Es un **formato abierto**: cualquiera puede leer, crear y modificar archivos `.marc` con sus propias herramientas, sin necesitar MARC. Todas las ediciones de MARC (EN, M y la futura E) siguen esta misma especificación, así que un `.marc` creado en una se abre en las demás.
 
+> [!info] Versión en inglés e implementación de referencia
+> La especificación está también en inglés en el repositorio público [MARC-FORMATO](https://github.com/Anton-Bazh/MARC-FORMATO), junto con una implementación de referencia en Python (validar, extraer y crear `.marc`) y los *issues* de la comunidad.
+
 > [!tip] ¿Solo quieres usarlo?
 > Para abrir, compartir o exportar un `.marc` desde MARC no necesitas nada de esta página: ver [[07 El formato .marc]]. Esta página es para quien quiera **crear o leer `.marc` por su cuenta** (scripts, integraciones, otras aplicaciones).
 
