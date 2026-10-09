@@ -20,6 +20,8 @@ Si el enlace "página 3" muestra **Página 3**, el visor llegó al lugar exacto.
 | **E** | Una ventana aparte que mueves y cambias de tamaño junto a MARC. Se **reutiliza**: el siguiente enlace se abre en la misma | PDF (con su índice, búsqueda y zoom), texto, imágenes y lo que el navegador integrado sabe mostrar |
 | **M** | **Ventana flotante** (como un teléfono encima de MARC) o **pantalla dividida** (MARC a un lado, el visor al otro) | PDF (desplazamiento continuo, zoom con dos dedos, contador `3 / 8`) y textos (`.txt`, `.md`, `.csv`, `.json`, `.yaml`, `.log`) |
 
+![Visor de E en su ventana, con el manual de prueba abierto en la página 3](assets/capturas/e/visor.png)
+
 Ambas son de **solo lectura**: el visor nunca modifica el archivo. Si el tipo aún no se puede mostrar, M lo dice: *"Este tipo de archivo llegará al visor más adelante."*
 
 ## Flotante o pantalla dividida (M)

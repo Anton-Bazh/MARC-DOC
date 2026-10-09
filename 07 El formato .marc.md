@@ -30,6 +30,10 @@ El `.marc` no es un formato cerrado de MARC: es un **ZIP estándar** con una est
 | Escritorio | Hub → **Abrir archivo .marc**, o en el panel de conexión la pestaña **Archivo .marc** |
 | Móvil | **+ Conectar** → "o abre un archivo .marc", o tocar el archivo en tu gestor de archivos y elegir **Abrir con → MARC** |
 
+En el escritorio, con E instalada, los `.marc` llevan su propio icono en el gestor de archivos y se abren con **doble clic**:
+
+![Archivos .marc con su icono en el gestor de archivos, junto a un PDF, un .md y una carpeta](assets/capturas/e/archivo-marc.png)
+
 MARC comprueba que el archivo sea un `.marc` válido antes de abrirlo; si no lo es, solo te avisa. Abrir el **mismo** archivo otra vez no crea una copia nueva: vuelve a abrir la que ya tenías.
 
 ## Solo lectura o editable
