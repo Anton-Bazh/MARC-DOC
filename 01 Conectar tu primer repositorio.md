@@ -50,8 +50,8 @@ MARC lee esa carpeta tal cual, en el momento en que la abres — no la copia ni 
 
 En el Hub, **Abrir archivo .marc** (o la pestaña **Archivo .marc** del panel de conexión) te deja elegir el archivo. MARC lo valida y lo abre como una wiki más:
 
-- Si el `.marc` salió de un **repositorio de Git**, queda en **solo lectura**: la fuente de verdad sigue siendo el repositorio. MARC te avisa si el repositorio tiene una versión más nueva (para un repositorio privado te pedirá el token, que se guarda aparte, nunca en el archivo).
-- Si salió de una **carpeta local**, es **editable**: el botón **Editar** de cada página guarda el cambio de vuelta en el `.marc`.
+- En **E y M**, todo `.marc` es **editable**: cada **Guardar** escribe el cambio de vuelta en el propio archivo. Si salió de un **repositorio de Git**, además puedes **vincularlo** con ese repositorio para tener historial, notas, publicar y actualizar ([[07 El formato .marc#Vincular un .marc con su repositorio]]).
+- En **EN** (edición ligera), un `.marc` de Git se abre en solo lectura y avisa si su repositorio tiene una versión más nueva; uno de carpeta local es editable.
 
 Más detalle en [[07 El formato .marc]].
 

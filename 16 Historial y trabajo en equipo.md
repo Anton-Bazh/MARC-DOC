@@ -3,7 +3,7 @@
 Cuando una wiki vive en **Git**, MARC te muestra quién la escribió, qué cambió y cuándo, sin salir de la página. Es para **colaborar** (a quién preguntar, qué cambió, qué falta), no para medir a nadie: no hay rankings ni productividad. Está en **E** y en **M**.
 
 > [!info] Solo en wikis con Git
-> Una carpeta sin Git o una wiki abierta desde un `.marc` no tiene historial: el `.marc` lleva el contenido, no la historia. El panel lo explica y, si tienes abierta la misma wiki con Git, te ofrece abrirla.
+> Una carpeta sin Git no tiene historial. Un `.marc` que salió de un repositorio lo obtiene al **vincularlo** con él desde este panel ([[07 El formato .marc#Vincular un .marc con su repositorio]]); uno de carpeta local no tiene repositorio que vincular.
 
 ## La pestaña Historial
 

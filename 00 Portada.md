@@ -8,7 +8,7 @@ title: Portada
 
 ### Markdown Automatizado por Repo y Consulta
 
-`EN2.0.1` · `E2.2.3` · `M2.7.3`
+`EN2.0.1` · `E2.2.3` · `M2.8.0`
 
 ---
 
@@ -23,8 +23,8 @@ Empezó como una aplicación de escritorio ligera. Desde la versión 2 es una **
 | Conectar | GitHub, carpeta local, archivo `.marc` | GitHub (con tu cuenta), carpeta local, archivo `.marc` y doble clic en un `.marc` o `.md` | GitHub, carpeta local, archivo `.marc` y "Abrir con" desde cualquier gestor de archivos |
 | Exportar | PDF, Word y `.marc` | PDF, Word y `.marc` | PDF, Word y `.marc` |
 | Funciones nuevas | Se mantiene como está | Sí | Sí |
-| Estado | Disponible | Disponible (`E2.2.3`) | Disponible (`M2.7.3`) |
-| Guía | Páginas [[01 Conectar tu primer repositorio\|01]] a [[05 Cómo escribir tu documentación\|05]] | Páginas 01 a 06 y [[14 Novedades\|14]] a [[22 Practica las funciones\|22]] | [[08 MARC en tabletas y teléfonos]], [[09 Asistente IA]] y [[14 Novedades\|14]] a [[22 Practica las funciones\|22]] |
+| Estado | Disponible | Disponible (`E2.2.3`) | Disponible (`M2.8.0`) |
+| Guía | Páginas [[01 Conectar tu primer repositorio\|01]] a [[05 Cómo escribir tu documentación\|05]] | Páginas 01 a 06 y [[14 Novedades\|14]] a [[22 Practica las funciones\|22]] | [[08 MARC en tabletas y teléfonos]], [[09 Asistente IA]] y [[14 Novedades\|14]] a [[23 Firmas a mano\|23]] |
 
 La diferencia entre las tres, por qué existe cada una y cómo conseguirlas está en [[10 Ediciones y versiones]].
 
@@ -93,6 +93,7 @@ En otras palabras: MARC es una capa de lectura y consulta sobre tus archivos, no
 | [[20 Lectura cómoda y accesibilidad]] | «Aa», modo dislexia, luz de noche, regla, énfasis y lector de voz |
 | [[21 Visor de archivos]] | Abrir PDF y textos aparte, en la página exacta |
 | [[22 Practica las funciones]] | Wiki de práctica editable, PDF de prueba y la documentación en PDF |
+| [[23 Firmas a mano]] | Firmar con el dedo, el lápiz o el ratón; la firma queda como SVG en la wiki |
 
 > [!tip] ¿Tienes prisa?
 > En el escritorio (EN o E), ve directo a [[01 Conectar tu primer repositorio]]. En una tableta o teléfono (M), a [[08 MARC en tabletas y teléfonos]]. ¿Ya usas MARC? Mira [[14 Novedades]] y prueba todo en la [[22 Practica las funciones|wiki de práctica]]. ¿No sabes cuál edición es la tuya? Ver [[10 Ediciones y versiones]].

@@ -85,7 +85,7 @@ Otra persona publicó un cambio en **las mismas líneas** que tú. MARC no elige
 
 ## No aparece el botón Publicar
 
-Aparece solo cuando hay algo que publicar, en una wiki con **Git**: guarda primero un cambio o deja una nota. Una carpeta sin Git o un `.marc` no tienen Publicar (en E, una carpeta te ofrece **Publicar esta carpeta en GitHub**). En la tableta, una wiki conectada antes de M2.2.0 necesita **Traer historial completo**. Ver [[18 Publicar cambios (Git)]].
+Aparece solo cuando hay algo que publicar, en una wiki con **Git**: guarda primero un cambio o deja una nota. Una carpeta sin Git o un `.marc` sin vincular no tienen Publicar (un `.marc` de repositorio se vincula desde **Historial**) (en E, una carpeta te ofrece **Publicar esta carpeta en GitHub**). En la tableta, una wiki conectada antes de M2.2.0 necesita **Traer historial completo**. Ver [[18 Publicar cambios (Git)]].
 
 ## "El servidor pidió permiso" al publicar
 
@@ -105,7 +105,7 @@ Todavía no: E tiene toda la lectura cómoda (dislexia, luz de noche, énfasis, 
 
 ## Abrí un .marc y no hay historial ni Publicar
 
-Es normal: un `.marc` lleva el **contenido** de la wiki, no su historia de Git. Para el historial, conecta el repositorio original con **+ Conectar → Git**. Ver [[16 Historial y trabajo en equipo]].
+El archivo no lleva la historia de Git dentro: la trae el vínculo. Si el `.marc` salió de un repositorio, abre **Historial** y pulsa **Vincular con su repositorio**; desde ahí tienes historial, notas, **Publicar** y **↻ actualizar**, y lo que editaste en el `.marc` se conserva como borrador. Un `.marc` de carpeta local no tiene repositorio que vincular. Ver [[07 El formato .marc#Vincular un .marc con su repositorio]].
 
 ## El enlace a un PDF no abre en la página correcta
 

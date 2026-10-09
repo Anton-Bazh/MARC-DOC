@@ -46,7 +46,7 @@ flowchart LR
 
 | Función | Por qué | Cómo probarla |
 |---|---|---|
-| Historial, autoría, comparar | Un `.marc` no lleva historia | En tu wiki de GitHub del paso 5, después de dos o tres publicaciones ([[16 Historial y trabajo en equipo]]) |
+| Historial, autoría, comparar | La práctica se empaquetó desde una carpeta sin Git, así que no tiene repositorio que vincular | En tu wiki de GitHub del paso 5, después de dos o tres publicaciones ([[16 Historial y trabajo en equipo]]) |
 | Notas como *issues* de GitHub | La práctica no está en GitHub | En tu wiki de GitHub del paso 5 ([[19 Notas de equipo]]) |
 | Publicar | La práctica no tiene Git | Paso 5 |
 

@@ -32,10 +32,11 @@ La edición **E** ya está disponible: la interfaz completa de MARC en su propia
 | **Abrir con MARC** | Doble clic en un `.marc` o un `.md` lo abre en MARC; una sola ventana | [[03 Navegar la wiki]] |
 | Panel derecho ajustable | Arrastra su borde para ensancharlo (hasta el doble) | [[03 Navegar la wiki]] |
 
-## M2.7.3 · tabletas y teléfonos
+## M2.8.0 · tabletas y teléfonos
 
 | Versión | Qué trae | Página |
 |---|---|---|
+| **M2.8.0** | **Firmas a mano** con el dedo o el lápiz, guardadas como SVG en la wiki. Un `.marc` que salió de un repositorio se **vincula** con él: historial, notas, publicar y actualizar, sin perder lo editado en el archivo | [[23 Firmas a mano]], [[07 El formato .marc]] |
 | **M2.7.3** | La portada de los PDF que exportas lleva la abeja | [[06 Exportar PDF, Word y .marc]] |
 | **M2.7.2** | Icono del lanzador y logo de la aplicación más grandes y nítidos | [[00 Portada]] |
 | **M2.7.1** | La nueva imagen de MARC: **la abeja** (Margaret), en el icono de la aplicación y dentro de la app | [[00 Portada]] |

@@ -4,7 +4,7 @@
 
 **MARC** — *Markdown Automatizado por Repo y Consulta* — nació con otro nombre de trabajo, **Wiki Desktop Client**, mientras la idea todavía se estaba probando: leer la documentación técnica de un equipo directo desde su repositorio de Git, sin nube, sin plataforma, sin fricción. El nombre cambió; la idea y la arquitectura descentralizada detrás — ver [[00 Portada|Portada]] — se mantienen igual desde el primer commit. Nació **ligero**, para consultar tus wikis sin tener una aplicación pesada abierta: esa edición sigue viva como **EN**. Con la **generación 2** MARC se convirtió en una familia de ediciones —EN (escritorio en navegador), E (escritorio con ventana propia) y M (móvil)— con formato portable, exportación a PDF y Word, asistente de IA y, en E y M, edición visual, Git completo, trabajo en equipo y lectura accesible.
 
-`EN2.0.1` · `E2.2.3` · `M2.7.3` — ver [[10 Ediciones y versiones]] y [[14 Novedades]]
+`EN2.0.1` · `E2.2.3` · `M2.8.0` — ver [[10 Ediciones y versiones]] y [[14 Novedades]]
 
 Los avisos legales de todo el software de terceros están en **Acerca de** (Ajustes → Acerca de en E y M); cada uno abre su licencia completa.
 
@@ -58,6 +58,7 @@ flowchart LR
 | :material-package-variant-closed: | Instalador de escritorio | NSIS en Windows, `.deb` en Linux — ambos empaquetan Python y todo lo anterior, sin dependencias que instalar aparte |
 | :material-file-pdf-box: | Exportación a PDF (escritorio y móvil) | [Typst](https://typst.app/) compilado a WebAssembly ([typst.ts](https://github.com/Myriad-Dreamin/typst.ts)) y [MathJax](https://www.mathjax.org/) para las fórmulas |
 | :material-file-word-box: | Exportación a Word (escritorio y móvil) | [docx](https://docx.js.org/) (MIT): documentos de Word, gráficas nativas y ecuaciones de Word |
+| :material-draw: | Firmas a mano (E y M) | [Perfect Freehand](https://github.com/steveruizok/perfect-freehand) (MIT), portado a Kotlin: trazo de tinta con grosor variable |
 | :simple-android: | MARC móvil | [Kotlin](https://kotlinlang.org/) y [Jetpack Compose](https://developer.android.com/compose) |
 | :simple-rust: | Núcleo de MARC móvil | [Rust](https://www.rust-lang.org/): [comrak](https://github.com/kivikakk/comrak) (Markdown), [gix](https://github.com/GitoxideLabs/gitoxide) (Git), [zip](https://github.com/zip-rs/zip2) (formato `.marc`), unidos a la app con [UniFFI](https://github.com/mozilla/uniffi-rs) |
 | :material-shield-key-outline: | Claves en el móvil | Almacén seguro de Android (Keystore), cifrado AES-GCM |

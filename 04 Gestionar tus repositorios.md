@@ -29,7 +29,7 @@ Pulsa cualquier repositorio de tu lista que no esté marcado como **activo**. La
 
 ## Archivos .marc
 
-Un `.marc` abierto aparece con un icono de paquete y su modo: **Git · solo lectura** o **Local · editable**. Su botón **Recargar el archivo .marc** vuelve a leerlo del disco (útil si alguien te mandó una versión nueva con el mismo nombre). Para un `.marc` de Git verás además si su repositorio está **al día** o tiene una **versión nueva**. Ver [[07 El formato .marc]].
+Un `.marc` abierto aparece con un icono de paquete. En E y M siempre es editable y, si viene de un repositorio, se puede vincular con él ([[07 El formato .marc#Vincular un .marc con su repositorio]]). En EN muestra su modo: **Git · solo lectura** o **Local · editable**. Su botón **Recargar el archivo .marc** vuelve a leerlo del disco (útil si alguien te mandó una versión nueva con el mismo nombre). Para un `.marc` de Git verás además si su repositorio está **al día** o tiene una **versión nueva**. Ver [[07 El formato .marc]].
 
 ## Quitar un repositorio
 
