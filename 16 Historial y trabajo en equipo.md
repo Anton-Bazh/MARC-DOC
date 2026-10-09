@@ -21,6 +21,10 @@ En el **panel derecho** (botón del panel, arriba a la derecha) elige **Historia
 
 ![Historial](assets/capturas/e/historial.png)
 
+![Comparar versiones: antes y después de un cambio, lado a lado](assets/capturas/e/comparar.png)
+
+![Ver autoría: cada parte de la página con su autor](assets/capturas/e/autoria.png)
+
 ## Cambió desde tu última lectura
 
 Si **otra persona** cambió una página desde la última vez que la leíste, verás:
@@ -35,6 +39,8 @@ Tus propios cambios **no** activan el aviso.
 - **Equipo de esta wiki** (desde el Historial): quién trabaja la wiki, su actividad y quién conoce cada parte.
 - **Actividad** (en el inicio): lo último que pasó en tus wikis con Git.
 - La **barra de estado** (abajo, E) muestra la rama, el último commit, su autor y cuándo.
+
+![Equipo de esta wiki: actividad de los últimos meses y personas](assets/capturas/e/equipo.png)
 
 ## En tiempo real
 

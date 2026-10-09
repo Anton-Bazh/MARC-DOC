@@ -11,6 +11,8 @@ El Hub es la pantalla principal de la app — lo primero que ves siempre al abri
 
 Pulsa cualquier tarjeta para abrir esa wiki. Si no era la activa, la app la sincroniza y la vuelve la activa automáticamente.
 
+![Hub de E con tres wikis conectadas y la actividad del equipo](assets/capturas/e/hub.png)
+
 ## Buscador del Hub
 
 La caja de búsqueda del Hub no solo filtra por el nombre del repositorio — también busca dentro de los **títulos de todas sus páginas**. Así, si escribes "arquitectura" y ningún repositorio se llama así, pero uno de ellos tiene una página titulada "Arquitectura del sistema", esa tarjeta va a aparecer igual.

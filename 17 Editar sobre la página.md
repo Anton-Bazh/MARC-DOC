@@ -19,6 +19,10 @@ Arriba aparecen dos pestañas:
 | **Visual** (la de inicio) | Escribes sobre la página dibujada: párrafos, títulos, listas, citas, avisos (*callouts*) y **celdas de tablas** |
 | **Markdown** | El texto fuente completo, para lo que Visual no edita: bloques de código, diagramas, gráficas, fórmulas, imágenes, encabezados de tabla, o cambios grandes de estructura |
 
+![Modo Visual: se escribe sobre la página dibujada](assets/capturas/e/editar-visual.png)
+
+![Modo Markdown: el texto fuente completo](assets/capturas/e/editar-markdown.png)
+
 Puedes pasar de una a otra sin perder lo escrito. De **Markdown** a **Visual** solo se vuelve después de **Guardar** o **Descartar** (MARC lo avisa: *"guarda o descarta los cambios de Markdown para volver a Visual"*), porque la página dibujada es la guardada.
 
 ## Negrita y cursiva
