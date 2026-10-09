@@ -1,9 +1,17 @@
 # Novedades
 
-Qué trae cada versión de MARC y dónde aprender a usarlo. Las ediciones completas (**E** y **M**) reciben las funciones primero; **EN** las recibe después, si encajan con su idea de ligereza (ver [[10 Ediciones y versiones]]).
+Qué trae cada versión de MARC y dónde aprender a usarlo. Las funciones nuevas llegan a las ediciones completas, **E** y **M**; **EN** se mantiene como edición ligera (ver [[10 Ediciones y versiones]]).
 
 > [!tip] Prueba todo lo nuevo
 > Abre la [[22 Practica las funciones|wiki de práctica]]: es editable y trae un PDF de prueba, así que puedes probar cada función sin tocar tus wikis.
+
+## E2.2.1 · escritorio con ventana propia
+
+| Versión | Qué trae | Página |
+|---|---|---|
+| **E2.2.1** | La nueva imagen de MARC: **la abeja** (Margaret), como icono de la aplicación, de los archivos `.marc` y dentro de la app | [[00 Portada]] |
+| **E2.2.0** | El asistente **conoce MARC**: escribe usando diagramas, tablas, avisos y demás recursos; **copiar** y **↻ reintentar** bajo las respuestas; puede proponer cambios desde el primer momento (lo apagas en el pie del chat); también coloca imágenes junto a un documento abierto con «Abrir con» | [[09 Asistente IA]] |
+| **E2.1.0** | El asistente **ve imágenes**: adjúntalas con el clip o arrástralas a la conversación, y puede guardarlas en la wiki o mover las que ya tienes. **Dictado**: habla en vez de escribir, sin conexión. ↻ actualizar une tus cambios con los del servidor | [[09 Asistente IA]] |
 
 ## E2.0.0 · escritorio con ventana propia
 
@@ -22,10 +30,15 @@ La edición **E** ya está disponible: la interfaz completa de MARC en su propia
 | **Abrir con MARC** | Doble clic en un `.marc` o un `.md` lo abre en MARC; una sola ventana | [[03 Navegar la wiki]] |
 | Panel derecho ajustable | Arrastra su borde para ensancharlo (hasta el doble) | [[03 Navegar la wiki]] |
 
-## M2.3.2 · tabletas y teléfonos
+## M2.7.1 · tabletas y teléfonos
 
 | Versión | Qué trae | Página |
 |---|---|---|
+| **M2.7.1** | La nueva imagen de MARC: **la abeja** (Margaret), en el icono de la aplicación y dentro de la app | [[00 Portada]] |
+| **M2.7.0** | **Historial completo en la tableta**: Comparar, Autoría y Equipo; botón **Nueva página** en el índice; los cambios se guardan bien en wikis creadas en la tableta | [[16 Historial y trabajo en equipo]] |
+| **M2.6.0** | El asistente **conoce MARC**, **copiar** y **↻ reintentar** bajo las respuestas, y puede proponer cambios desde el primer momento | [[09 Asistente IA]] |
+| **M2.5.0** | El asistente **ve tus fotos** (clip) y las coloca en la wiki; **dictado** con el reconocedor de voz del dispositivo | [[09 Asistente IA]] |
+| **M2.4.0** | **Crear una wiki en este equipo**; comentar un párrafo **tocándolo**; Git funciona en `/MARC/Wikis` (publicar y actualizar); el código se lee bien en modo dislexia con tema oscuro | [[19 Notas de equipo]] |
 | **M2.3.2** | El visor se abre de verdad en **ventana flotante** o en **pantalla dividida** (antes, en algunas tabletas como las Huawei, se abría a pantalla completa) | [[21 Visor de archivos]] |
 | **M2.3.1** | Un enlace a un `.marc` abre esa wiki desde una copia (así se abre la wiki de práctica de esta documentación) | [[22 Practica las funciones]] |
 | **M2.3.0** | **Visor de archivos** en ventana flotante o pantalla dividida (PDF en la página exacta, textos) | [[21 Visor de archivos]] |

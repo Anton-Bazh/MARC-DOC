@@ -7,8 +7,8 @@ MARC tiene **tres ediciones**. Todas leen las mismas wikis, comparten el formato
 | Qué es | Un servicio pequeño en tu equipo; la wiki se ve en tu navegador | Una aplicación de escritorio completa, con la interfaz de MARC en su propia ventana | La aplicación para tabletas y teléfonos |
 | Dónde corre | Windows y Linux | Windows y Linux | Android 8 o superior |
 | Pensada para | Leer y consultar **ligero**, sin tener una aplicación pesada abierta | Trabajar a fondo con tus wikis en el escritorio | Llevarte tus wikis, leerlas sin conexión, editarlas y consultarlas con IA |
-| Funciones nuevas | Las recibe **después**, y solo las que encajan con su idea de ligereza | **Primero** | **Primero** |
-| Estado | Disponible: `EN2.0.0` | Disponible: `E2.0.0` | Disponible: `M2.3.2` |
+| Funciones nuevas | Se mantiene como está | **Sí** | **Sí** |
+| Estado | Disponible: `EN2.0.1` | Disponible: `E2.2.1` | Disponible: `M2.7.1` |
 
 ```mermaid
 flowchart TB
@@ -20,7 +20,6 @@ flowchart TB
         EN["EN · escritorio en navegador"]
     end
     F["Funciones nuevas"] --> E & M
-    F -. "después, si encajan<br/>con su idea de ligereza" .-> EN
 ```
 
 ## Por qué existe cada una
@@ -29,13 +28,13 @@ flowchart TB
 
 MARC nació como **EN**, con una idea: que fuera **ligero** y que no tuvieras que tener todo abierto. EN corre como un servicio pequeño en tu equipo y la wiki se ve en el navegador que ya usas, en una pestaña más. Así seguirá: EN es la opción para consultar tus wikis sin cargar una aplicación completa.
 
-Por esa misma idea, EN recibe las funciones nuevas **después** que E y M, y solo las que no la hacen pesada.
+Por esa misma idea, EN se mantiene como está: las funciones nuevas llegan a E y M. Para el escritorio completo, usa **E**.
 
 ### E — el escritorio completo
 
 **E** lleva al escritorio la misma interfaz de MARC móvil, en su propia ventana: barra lateral, lector, búsqueda, edición visual, publicar con Git, historial y trabajo en equipo, notas, lectura cómoda, visor de archivos, asistente de IA y exportación. Junto con M es una edición **completa**: las funciones y actualizaciones llegan **primero** a ellas.
 
-E es una versión **estable** (`E2.0.0`). Abre los `.marc` y `.md` con doble clic y mantiene **una sola ventana**: si ya está abierta, el archivo se abre en ella. Está previsto que en Windows puedas elegir al instalar qué interfaz quieres: **E** (ventana propia) o **EN** (en el navegador). Todo lo que trae está en [[14 Novedades]].
+E es una versión **estable** (`E2.2.1`). Abre los `.marc` y `.md` con doble clic y mantiene **una sola ventana**: si ya está abierta, el archivo se abre en ella. En Linux se instala con su propio paquete; para Windows, E y EN tendrán cada una su instalador. Todo lo que trae está en [[14 Novedades]].
 
 ### M — el móvil
 
@@ -58,23 +57,23 @@ Cada versión lleva la **letra de su edición** seguida de su número:
 
 | Edición | Ejemplo |
 |---|---|
-| EN | `EN2.0.0` |
-| E | `E2.0.0` |
-| M | `M2.3.2` |
+| EN | `EN2.0.1` |
+| E | `E2.2.1` |
+| M | `M2.7.1` |
 
 El número tiene tres partes: **mayor . menor . parche**.
 
 - **Mayor:** es **el mismo en todas las ediciones**: marca la generación de MARC y cambia en todas a la vez.
 - **Menor y parche:** son propios de cada edición, porque cada una recibe sus propias mejoras y correcciones.
 
-Por ejemplo, `M2.3.2` y `EN2.0.7` son de la misma generación (la 2): M ya recibió más funciones, como corresponde a una edición completa.
+Por ejemplo, `M2.7.1` y `EN2.0.1` son de la misma generación (la 2): M ya recibió más funciones, como corresponde a una edición completa.
 
 ```mermaid
 flowchart LR
     G1["Generación 1<br/>v1.x · solo escritorio en navegador"] --> G2["Generación 2"]
     G2 --> EN2["EN2.0.0 → EN2.0.1 → …"]
-    G2 --> M2["M2.0.0 → M2.1.0 → M2.2.0 → M2.3.2 → …"]
-    G2 --> E2["E2.0.0 → …"]
+    G2 --> M2["M2.0.0 → … → M2.3.2 → M2.4.0 → … → M2.7.1 → …"]
+    G2 --> E2["E2.0.0 → E2.1.0 → E2.2.0 → E2.2.1 → …"]
 ```
 
 ### Por qué estamos en la 2
