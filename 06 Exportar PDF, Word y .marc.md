@@ -21,6 +21,8 @@ El PDF incluye una **portada** con el nombre de la wiki y sus cifras (páginas, 
 - Los PDF que tu documentación enlaza (adjuntos) se incluyen completos al final, como **Anexos**.
 - Si un diagrama o gráfica tiene un error de sintaxis, el PDF muestra un recuadro con el motivo **y su código completo**: nada se pierde.
 
+![Portada e índice de un PDF exportado con MARC](assets/capturas/e/pdf-portada.png)
+
 Al terminar verás un **reporte**: enlaces a notas que no existen, imágenes convertidas, adjuntos incluidos. Es informativo; el PDF siempre se genera.
 
 ## Word (.docx)

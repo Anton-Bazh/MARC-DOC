@@ -24,6 +24,8 @@ La caja de búsqueda del Hub no solo filtra por el nombre del repositorio — ta
 
 El Hub te lo dice claramente y te ofrece el botón para conectar tu primer repositorio — ver [[01 Conectar tu primer repositorio]].
 
+![Hub de la primera vez: «Conecta tu primera wiki» y el botón + Conectar](assets/capturas/e/hub-vacio.png)
+
 ## Siguiente paso
 
 Una vez dentro de una wiki, [[03 Navegar la wiki]] explica cómo moverte, buscar y cambiar de tema.
